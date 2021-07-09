@@ -6,36 +6,77 @@
 />
 <div class="wrapper">
   <div class="spacer1"></div>
-  <div class="item-a">
+  <div id="top" class="top">
     <p class="name">Aiden Schrock</p>
-    <div class="socials">
-      <a class="icon" target="_blank" href="https://github.com/aidenschrock">
-        <img src="../../assets/github.svg" />
-      </a>
-      <a
-        class="icon"
-        target="_blank"
-        href="https://www.linkedin.com/in/aiden-schrock/"
-      >
-        <img src="../../assets/linkedin.svg" />
-      </a>
-      <a class="icon" target="_blank" href="https://twitter.com/AidenNSchrock">
-        <img src="../../assets/twitter.svg" />
-      </a>
-    </div>
   </div>
   <div class="spacer2"></div>
   <nav>
-    <a><img class="icon" src="../../assets/home.svg" /></a>
+    <a (click)="onClick('top')"
+      ><svg
+        class="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="#FFFFFF"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"
+        />
+      </svg>
+    </a>
 
-    <a><img class="icon" src="../../assets/face.svg" /></a>
+    <a (click)="onClick('about')"
+      ><svg
+        class="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="#FFFFFF"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M10.25 13c0 .69-.56 1.25-1.25 1.25S7.75 13.69 7.75 13s.56-1.25 1.25-1.25 1.25.56 1.25 1.25zM15 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm7 .25c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2s10 4.48 10 10zM10.66 4.12C12.06 6.44 14.6 8 17.5 8c.46 0 .91-.05 1.34-.12C17.44 5.56 14.9 4 12 4c-.46 0-.91.05-1.34.12zM4.42 9.47c1.71-.97 3.03-2.55 3.66-4.44C6.37 6 5.05 7.58 4.42 9.47zM20 12c0-.78-.12-1.53-.33-2.24-.7.15-1.42.24-2.17.24-3.13 0-5.92-1.44-7.76-3.69C8.69 8.87 6.6 10.88 4 11.86c.01.04 0 .09 0 .14 0 4.41 3.59 8 8 8s8-3.59 8-8z"
+        />
+      </svg>
+    </a>
 
-    <a><img class="icon" src="../../assets/work.svg" /></a>
+    <a (click)="onClick('work')"
+      ><svg
+        class="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="#FFFFFF"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"
+        />
+      </svg>
+    </a>
 
-    <a><img class="icon" src="../../assets/email.svg" /></a>
+    <a (click)="onClick('contact')">
+      <svg
+        class="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="#FFFFFF"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M12 1.95c-5.52 0-10 4.48-10 10s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57v-1.43c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57v-1.43c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"
+        />
+      </svg>
+    </a>
   </nav>
-  <div class="item-b">
-    <div class="section1">
+  <div class="main">
+    <div id="header" class="header">
       <h1>
         Web Design & <br />
         Development
@@ -43,9 +84,9 @@
       <h3>
         Communicate the soul of your business through personable web design
       </h3>
-      <button>Let's Talk!</button>
+      <button class="header-button">Let's Talk!</button>
     </div>
-    <div class="section2">
+    <div id="about" class="about">
       <img class="pfp" src="../../assets/pfp.jpg" />
       <div class="content">
         <h2>About</h2>
@@ -58,7 +99,7 @@
         </p>
       </div>
     </div>
-    <div class="section3">
+    <div class="process">
       <h2>Process</h2>
       <div class="content">
         <div class="leftSteps">
@@ -96,7 +137,7 @@
         </div>
       </div>
     </div>
-    <div class="section4">
+    <div class="tools">
       <h2>Tools</h2>
       <div class="content">
         <div class="headers">
@@ -105,47 +146,147 @@
         </div>
         <div class="icons">
           <div class="designIcons">
-            <img class="icon" src="../../assets/adobe.png" />
-            <img class="icon" src="../../assets/blender.png" />
-            <img class="icon" src="../../assets/figma.png" />
+            <img
+              class="icon"
+              src="../../assets/adobe.svg"
+              matTooltip="Adobe Creative Suite"
+            />
+
+            <img
+              matTooltip="Blender"
+              class="icon"
+              src="../../assets/blender.svg"
+            />
+            <img matTooltip="Figma" class="icon" src="../../assets/figma.svg" />
           </div>
           <div class="developmentIcons">
-            <img class="icon" src="../../assets/aws.svg" />
-            <img class="icon" src="../../assets/angular.png" />
-            <img class="icon" src="../../assets/wix.svg" />
+            <img
+              matTooltip="Amazon Web Services"
+              class="icon"
+              src="../../assets/aws.svg"
+            />
+            <img
+              matTooltip="Angular"
+              class="icon"
+              src="../../assets/angular.svg"
+            />
+            <img matTooltip="WIX" class="icon" src="../../assets/wix.svg" />
           </div>
         </div>
       </div>
     </div>
-    <div class="section5">
+    <div id="work" class="work">
       <h2>Work</h2>
       <div class="content">
         <img class="siteMock" src="../../assets/RecoludeMock.png" />
         <p>RECOLUDE</p>
       </div>
     </div>
-    <div class="section6">
+    <div id="contact" class="contact">
       <h2>Contact</h2>
       <div class="content">
-        <p>
-          If you’re interested in working with me, please reach out to me
-          through email or any of my socials!
-        </p>
-        <h1>AIDENNOELSCHROCK@PROTONMAIL.COM</h1>
-        <div class="socials">
-          <a target="_blank" href="https://github.com/aidenschrock">
-            <img class="icon" src="../../assets/github.svg" />
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/aiden-schrock/">
-            <img class="icon" src="../../assets/linkedin.svg" />
-          </a>
-          <a target="_blank" href="https://twitter.com/AidenNSchrock">
-            <img class="icon" src="../../assets/twitter.svg" />
-          </a>
+        <div class="contact-info">
+          <p>
+            If you’re interested in working with me, please reach out to me
+            through email or any of my socials!
+          </p>
+          <h1>AIDENNOELSCHROCK@PROTONMAIL.COM</h1>
+          <div class="socials">
+            <a target="_blank" href="https://github.com/aidenschrock">
+              <svg
+                class="icon"
+                id="SvgjsSvg1001"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:svgjs="http://svgjs.com/svgjs"
+              >
+                <defs id="SvgjsDefs1002"></defs>
+                <g id="SvgjsG1008" transform="matrix(1,0,0,1,0,0)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      class="color000 svgShape"
+                    ></path>
+                  </svg>
+                </g>
+              </svg>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/aiden-schrock/"
+            >
+              <svg
+                class="icon"
+                id="SvgjsSvg1011"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:svgjs="http://svgjs.com/svgjs"
+              >
+                <defs id="SvgjsDefs1012"></defs>
+                <g id="SvgjsG1013">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"
+                      class="color000 svgShape"
+                    ></path>
+                  </svg>
+                </g>
+              </svg>
+            </a>
+            <a target="_blank" href="https://twitter.com/AidenNSchrock">
+              <svg
+                class="icon"
+                id="SvgjsSvg1016"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:svgjs="http://svgjs.com/svgjs"
+              >
+                <defs id="SvgjsDefs1017"></defs>
+                <g id="SvgjsG1018">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
+                      class="color000 svgShape"
+                    ></path>
+                  </svg>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <form
+            class="contact-form"
+            [formGroup]="contactForm"
+            (ngSubmit)="onSubmit(contactForm.value)"
+          >
+            <mat-form-field appearance="outline">
+              <mat-label>Name</mat-label>
+              <input matInput placeholder="Name" formControlName="Fullname" />
+            </mat-form-field>
+            <mat-form-field appearance="legacy">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="Email" formControlName="Email" />
+            </mat-form-field>
+            <mat-form-field appearance="legacy" class="message-field">
+              <mat-label>Message</mat-label>
+              <input
+                matInput
+                placeholder="Type your message here"
+                formControlName="Comment"
+              />
+            </mat-form-field>
+            <button type="submit" [disabled]="!contactForm.valid">Send</button>
+          </form>
         </div>
       </div>
     </div>
   </div>
-  <div class="item-f"></div>
-  <div class="item-d"></div>
+  <div class="right-spacer"></div>
+  <div class="footer">
+    <div class="content">&#169;{{ currentYear }}</div>
+  </div>
 </div>

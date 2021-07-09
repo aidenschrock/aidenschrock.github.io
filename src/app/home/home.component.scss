@@ -1,10 +1,10 @@
 h1 {
   font-family: "Arima Madurai", cursive;
-  font-size: 90px;
+  font-size: 105.9px;
 }
 h2 {
   font-family: "Caveat Brush", cursive;
-  font-size: 45px;
+  font-size: 65.45px;
 }
 h3 {
   font-family: "Caveat Brush", cursive;
@@ -12,36 +12,57 @@ h3 {
 }
 h4 {
   font-family: "Poiret One", cursive;
-  font-size: 35px;
+  font-size: 40.45px;
 }
 p {
   font-family: "Poiret One", cursive;
   font-size: 25px;
 }
+.wrapper {
+  width: 99vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 4em auto 4em;
+  grid-template-areas:
+    "spacer1 header spacer2"
+    "nav main long"
+    ". footer .";
+}
 nav {
   grid-area: nav;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 3%;
+  margin-top: 15%;
   .icon {
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     margin-top: 10px;
+  }
+  .icon:hover {
+    cursor: pointer;
+    fill: #ff7f11;
+  }
+  @keyframes slidebg {
+    to {
+      background-position: 30vw;
+    }
   }
 }
 
-.item-a {
+.top {
   grid-area: header;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1%;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
-.item-b {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,15 +70,44 @@ nav {
   grid-area: main;
   border: 1px solid white;
 }
-button {
-  width: 140px;
-  background-color: gray;
-  border-radius: 2px;
+.header-button {
+  width: 220px;
+  background-color: #ff7f11;
+  border-radius: 5px;
   font-family: "Arima Madurai", cursive;
-  font-size: 25px;
+  font-size: 40.45px;
   margin-top: 5%;
+  padding: 1%;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
 }
-.section1 {
+
+.header-button:before {
+  content: "";
+  position: absolute;
+  border: #ff7f11 solid 4px;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+.header-button:hover:before,
+.header-button:focus:before,
+.header-button:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+}
+
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,7 +115,7 @@ button {
   margin-bottom: 10%;
   margin-top: 10%;
 }
-.section2 {
+.about {
   border-top: 1px solid white;
   padding: 1%;
   display: flex;
@@ -85,7 +135,7 @@ button {
     margin-right: 5%;
   }
 }
-.section3 {
+.process {
   border-top: 1px solid white;
   h2 {
     margin-top: 5%;
@@ -102,7 +152,7 @@ button {
   margin: 10%;
   border: 3px solid white;
 }
-.section4 {
+.tools {
   border-top: 1px solid white;
   width: 100%;
   text-align: center;
@@ -130,6 +180,7 @@ button {
     .icons {
       margin-right: 0;
       margin-left: 5%;
+      cursor: pointer;
       .icon {
         width: 70px;
         height: 70px;
@@ -149,7 +200,7 @@ button {
     }
   }
 }
-.section5 {
+.work {
   border-top: 1px solid white;
   width: 100%;
   text-align: center;
@@ -170,7 +221,52 @@ button {
     width: 300px;
   }
 }
-.section6 {
+
+mat-form-field {
+  width: 600px;
+  text-align: right;
+  color: white;
+}
+input {
+  width: 500px;
+  height: 3em;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+mat-form-field-placeholder {
+  margin-left: 5px;
+  color: white;
+}
+::ng-deep .mat-form-field-label {
+  color: white !important;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #ff7f11 !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #ece7e5 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: #ff7f11 !important;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.message-field {
+  input {
+    height: 10em;
+  }
+}
+.contact {
   border-top: 1px solid white;
   width: 100%;
   text-align: center;
@@ -186,6 +282,16 @@ button {
   }
   .content {
     margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     .socials {
       display: flex;
@@ -193,6 +299,7 @@ button {
       align-items: center;
       text-align: center;
       width: 100%;
+      margin-top: 30px;
     }
     .icon {
       display: flex;
@@ -200,8 +307,12 @@ button {
       align-items: center;
       text-align: center;
       margin: 15px;
-      width: 45px;
-      height: 45px;
+      width: 60px;
+      height: 60px;
+      fill: white;
+    }
+    .icon:hover {
+      fill: #ff7f11;
     }
     p {
       width: 550px;
@@ -209,7 +320,7 @@ button {
     }
   }
 }
-.item-d {
+.footer {
   display: block;
   grid-area: footer;
   border-left: 1px solid white;
@@ -217,45 +328,25 @@ button {
   padding: 1%;
   margin-bottom: 0px;
   width: 100%;
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .spacer1 {
   grid-area: spacer1;
-  height: 20%;
 }
 .spacer2 {
   grid-area: spacer2;
-  height: 20%;
 }
-.item-f {
+.right-spacer {
   grid-area: long;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-}
-.socials {
-  display: flex;
-  width: 180px;
-  .icon {
-    height: 30px;
-    width: 30px;
-    margin-left: 8%;
-  }
 }
 
 .name {
   font-family: "Caveat Brush", cursive;
   font-size: 25px;
-}
-
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-  grid-template-rows: 4em auto 4em;
-  grid-template-areas:
-    "spacer1 header spacer2"
-    "nav main long"
-    ". footer .";
 }
 
 .leftSteps {
