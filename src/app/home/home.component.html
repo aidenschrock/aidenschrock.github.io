@@ -1,15 +1,7 @@
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&family=Caveat+Brush&family=Poiret+One&display=swap"
-  rel="stylesheet"
-/>
 <div class="wrapper">
-  <div class="spacer1"></div>
   <div id="top" class="top">
     <p class="name">Aiden Schrock</p>
   </div>
-  <div class="spacer2"></div>
   <nav>
     <a (click)="onClick('top')"
       ><svg
@@ -84,7 +76,7 @@
       <h3>
         Communicate the soul of your business through personable web design
       </h3>
-      <button class="header-button">Let's Talk!</button>
+      <button (click)="onClick('contact')" class="header-button">Let's Talk!</button>
     </div>
     <div id="about" class="about">
       <img class="pfp" src="../../assets/pfp.jpg" />
@@ -178,19 +170,42 @@
     <div id="work" class="work">
       <h2>Work</h2>
       <div class="content">
-        <img class="siteMock" src="../../assets/RecoludeMock.png" />
+        <img [routerLink]="['/work']" class="siteMock" src="../../assets/RecoludeMock.png" />
         <p>RECOLUDE</p>
       </div>
     </div>
     <div id="contact" class="contact">
       <h2>Contact</h2>
       <div class="content">
+        <div>
+          <form
+            class="contact-form"
+            [formGroup]="contactForm"
+            (ngSubmit)="onSubmit(contactForm.value)"
+          >
+            <mat-form-field appearance="legacy">
+              <mat-label>Name</mat-label>
+              <input matInput formControlName="Fullname" />
+            </mat-form-field>
+            <mat-form-field appearance="legacy">
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="Email" />
+            </mat-form-field>
+            <mat-form-field appearance="legacy" class="message-field">
+              <mat-label>Message</mat-label>
+              <input
+                matInput
+                formControlName="Comment"
+              />
+            </mat-form-field>
+            <button mat-button class="contactFormSubmit" type="submit" [disabled]="!contactForm.valid">Send</button>
+          </form>
+        </div>
         <div class="contact-info">
           <p>
             If you’re interested in working with me, please reach out to me
-            through email or any of my socials!
+            through this form or any of my socials!
           </p>
-          <h1>AIDENNOELSCHROCK@PROTONMAIL.COM</h1>
           <div class="socials">
             <a target="_blank" href="https://github.com/aidenschrock">
               <svg
@@ -257,35 +272,11 @@
             </a>
           </div>
         </div>
-        <div>
-          <form
-            class="contact-form"
-            [formGroup]="contactForm"
-            (ngSubmit)="onSubmit(contactForm.value)"
-          >
-            <mat-form-field appearance="outline">
-              <mat-label>Name</mat-label>
-              <input matInput placeholder="Name" formControlName="Fullname" />
-            </mat-form-field>
-            <mat-form-field appearance="legacy">
-              <mat-label>Email</mat-label>
-              <input matInput placeholder="Email" formControlName="Email" />
-            </mat-form-field>
-            <mat-form-field appearance="legacy" class="message-field">
-              <mat-label>Message</mat-label>
-              <input
-                matInput
-                placeholder="Type your message here"
-                formControlName="Comment"
-              />
-            </mat-form-field>
-            <button type="submit" [disabled]="!contactForm.valid">Send</button>
-          </form>
-        </div>
+
       </div>
     </div>
   </div>
-  <div class="right-spacer"></div>
+ 
   <div class="footer">
     <div class="content">&#169;{{ currentYear }}</div>
   </div>

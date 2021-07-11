@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { ContactService } from '../contact.service';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 
 
@@ -13,7 +14,7 @@ import { ContactService } from '../contact.service';
 export class HomeComponent {
   contactForm: FormGroup
   currentYear: number;
-  constructor(private viewportScroller: ViewportScroller, private builder: FormBuilder, private contact: ContactService) {
+  constructor(private viewportScroller: ViewportScroller, private builder: FormBuilder, private contact: ContactService, private _snackBar: MatSnackBar) {
     this.currentYear = new Date().getFullYear();
     this.contactForm = this.builder.group({
       Fullname: new FormControl('', [Validators.required]),
@@ -32,11 +33,14 @@ export class HomeComponent {
     console.log(contactForm)
     this.contact.PostMessage(contactForm)
       .subscribe(response => {
-        location.href = 'https://mailthis.to/confirm'
+        this._snackBar.open('Message sent!', 'close');
         console.log(response)
       }, error => {
+        this._snackBar.open('Message failed to send.', 'close');
         console.warn(error.responseText)
         console.log({ error })
       })
   }
+
+
 }
