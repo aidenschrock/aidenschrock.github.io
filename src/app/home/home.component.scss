@@ -60,10 +60,9 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1%;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-left: 1px solid rgb(236, 231, 229);
+  border-right: 1px solid rgb(236, 231, 229);
 }
-
 
 .name {
   font-family: "Caveat Brush", cursive;
@@ -76,7 +75,7 @@ nav {
   justify-content: center;
   align-items: center;
   grid-area: main;
-  border: 1px solid white;
+  border: 1px solid rgb(236, 231, 229);
 }
 
 .header {
@@ -127,7 +126,7 @@ nav {
 }
 
 .about {
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(236, 231, 229);
   padding: 1%;
   display: flex;
   justify-content: center;
@@ -145,34 +144,67 @@ nav {
     align-items: center;
     margin-right: 5%;
   }
+
+  .pfp {
+    width: 500px;
+    height: auto;
+
+    margin: 10%;
+  }
+
+  .aboutIcons {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 5%;
+    width: 40%;
+    align-items: center;
+  }
+
+  .aboutIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .pcIcon {
+    height: 80px;
+  }
 }
 
-.pfp {
-  width: 300px;
-  height: auto;
-  border-radius: 50%;
-  margin: 10%;
-  border: 3px solid white;
+.aboutIcon:hover {
+  fill: #ff7f11;
+  cursor: pointer;
+}
+
+.pcIcon:hover {
+  fill: #ff7f11;
+  cursor: pointer;
 }
 
 .process {
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(236, 231, 229);
+  padding-bottom: 100px;
   h2 {
     margin-top: 5%;
     margin-left: 10%;
   }
   .content {
     margin: 5%;
-    padding-bottom: 5%;
-    .leftSteps {
 
+    .leftSteps {
       text-align: left;
-      margin-top: 5%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+      width: 80%;
     }
     .rightSteps {
-     
+      float: right;
       text-align: right;
-      margin-top: 5%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 80%;
       P {
         float: right;
         margin-left: auto;
@@ -181,11 +213,33 @@ nav {
     p {
       width: 70%;
     }
+
+    .leftIcons {
+      display: flex;
+      align-items: center;
+      fill: rgb(236, 231, 229);
+      height: 80px;
+      width: 80px;
+    }
+    .rightIcons {
+      display: flex;
+      align-items: center;
+      fill: rgb(236, 231, 229);
+      height: 120px;
+      width: 120px;
+    }
+    .micIcon {
+      display: flex;
+      align-items: center;
+      fill: rgb(236, 231, 229);
+      height: 160px;
+      width: 160px;
+    }
   }
 }
 
 .tools {
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(236, 231, 229);
   width: 100%;
   text-align: center;
   display: flex;
@@ -234,7 +288,7 @@ nav {
 }
 
 .work {
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(236, 231, 229);
   width: 100%;
   text-align: center;
   display: flex;
@@ -261,9 +315,8 @@ nav {
 
 mat-form-field {
   width: 600px;
-  color: white;
+  color: rgb(236, 231, 229);
   margin-top: 5%;
- 
 }
 
 input {
@@ -273,19 +326,20 @@ input {
   padding: 2%;
 }
 
-mat-form-field-placeholder {
+::ng-deep .mat-form-field-placeholder {
   margin-left: 5px;
-  color: white;
+  color: rgb(236, 231, 229) !important;
 }
 
 ::ng-deep .mat-form-field-label {
-  color: white !important;
+  color: rgb(236, 231, 229) !important;
   font-family: "Poiret One", cursive !important;
   font-size: 20px !important;
 }
 
 ::ng-deep .mat-input-element {
-  caret-color: white!important;
+  caret-color: rgb(236, 231, 229) !important;
+  overflow-wrap: break-word;
 }
 
 ::ng-deep .mat-focused .mat-form-field-label {
@@ -306,17 +360,17 @@ mat-form-field-placeholder {
 form {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: rgb(236, 231, 229);
 }
 
 .message-field {
-  input {
-    height: 10em;
+  textarea {
+    height: 7em;
   }
 }
 
 .contact {
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(236, 231, 229);
   width: 100%;
   text-align: center;
   display: flex;
@@ -363,7 +417,7 @@ form {
       margin: 15px;
       width: 60px;
       height: 60px;
-      fill: white;
+      fill: rgb(236, 231, 229);
     }
     .icon:hover {
       fill: #ff7f11;
@@ -374,8 +428,6 @@ form {
     }
   }
 }
-
-
 
 .contactFormSubmit {
   margin-top: 10px;
@@ -415,18 +467,18 @@ form {
   left: -8px;
 }
 
-form { 
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
   display: block;
   grid-area: footer;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-left: 1px solid rgb(236, 231, 229);
+  border-right: 1px solid rgb(236, 231, 229);
   padding: 1%;
   margin-bottom: 0px;
   width: 100%;
