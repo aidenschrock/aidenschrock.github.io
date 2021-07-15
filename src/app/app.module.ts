@@ -29,7 +29,7 @@ import { WorkComponent } from './work/work.component';
     ReactiveFormsModule,
     HttpClientModule,
     MatInputModule,
-    MatSnackBarModule
+    MatSnackBarModule,
   ],
   providers: [
     ContactService

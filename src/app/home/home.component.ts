@@ -3,7 +3,7 @@ import { ViewportScroller } from '@angular/common';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { ContactService } from '../contact.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
-
+import { HostListener } from '@angular/core';
 
 
 @Component({
@@ -23,7 +23,16 @@ export class HomeComponent {
     })
   }
 
+  @HostListener('window:scroll', ['$event'])
 
+  onWindowScroll() {
+    let element = document.querySelector('.top') as HTMLElement;
+    if (window.pageYOffset > element.clientHeight) {
+      element.classList.add('topScrolled');
+    } else {
+      element.classList.remove('topScrolled');
+    }
+  }
 
   public onClick(elementId: string): void {
     this.viewportScroller.scrollToAnchor(elementId);
