@@ -170,7 +170,6 @@ nav {
 .aboutIcons {
   display: flex;
   justify-content: space-between;
-
   margin-top: 5%;
   width: 50%;
   align-items: center;
@@ -553,9 +552,13 @@ form {
       }
     }
   }
+
   .pfp {
     margin: 2%;
     width: 200px;
+  }
+
+  .aboutIcons {
   }
 
   // .process {
