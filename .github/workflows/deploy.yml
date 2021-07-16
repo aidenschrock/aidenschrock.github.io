@@ -12,5 +12,5 @@ jobs:
           npm install
           npx ng deploy --cname=aidenschrock.me
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
