@@ -1,21 +1,46 @@
 <div class="wrapper">
-    <div id="top" class="top">
-        <div class="topContent">
-        <p class="name">Aiden Schrock</p>
-    
-    <nav>
-        <a (click)="backClicked()">
-            Home
-        </a>
-    </nav>
-</div>
-</div>
-    <div class="main">
-        <div id="header" class="header">
-            <h1>Recolude</h1>
-        </div>
+  <div class="top">
+    <div id="top" class="topContent">
+      <p class="name">Aiden Schrock</p>
+
+      <nav>
+        <a (click)="backClicked()"> Home </a>
+      </nav>
     </div>
-    <div class="footer">
-        <div class="content">&#169;{{ currentYear }}</div>
+  </div>
+  <div class="main">
+    <div id="header" class="header">
+      <h2>Recolude</h2>
+      <p>
+        Recolude is a a startup providing 3D spatial recording utilities for XR,
+        research, gaming, and mocap projects.
+      </p>
+    </div>
+    <div class="row1">
+      <img class="gif" src="../../assets/RecoludeApp.gif" />
+      <div class="textWrapper" fxLayout="column">
+        <p>
+          One of my first tasks with Recolude was to redesign their login/signup
+          flow. I created custom components and wired them up using AWS Cognito
+          and Amplify. I also created custom art of their mascot to greet users.
+        </p>
+        <h4><b>Languages/Frameworks/Toolkits:</b></h4>
+        <p>Html, SASS, Typescript, Angular, Angular Material</p>
+        <h4><b>Developer Tools:</b></h4>
+        <p>AWS Cognito & Amplify</p>
       </div>
+    </div>
+    <div class="row2">
+      <p>
+        I used Wix's Editor X to build the Recolude website. It was important to
+        use design to communicate the idea of Recolude. I used graphics and
+        animations to make the technical information easier to digest.
+      </p>
+      <img class="gif" src="../../assets/RecoludeWebsite.gif" />
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="content">&#169;{{ currentYear }}</div>
+  </div>
 </div>

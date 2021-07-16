@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { ContactService } from '../contact.service';
-import {MatSnackBar} from '@angular/material/snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { HostListener } from '@angular/core';
 
 
@@ -14,6 +14,7 @@ import { HostListener } from '@angular/core';
 export class HomeComponent {
   contactForm: FormGroup
   currentYear: number;
+
   constructor(private viewportScroller: ViewportScroller, private builder: FormBuilder, private contact: ContactService, private _snackBar: MatSnackBar) {
     this.currentYear = new Date().getFullYear();
     this.contactForm = this.builder.group({
@@ -21,7 +22,10 @@ export class HomeComponent {
       Email: new FormControl('', [Validators.required, Validators.email]),
       Comment: new FormControl('', [Validators.required])
     })
+
   }
+
+
 
   @HostListener('window:scroll', ['$event'])
 

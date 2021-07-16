@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HostListener } from '@angular/core';
-import {Location} from '@angular/common';
+import { Location } from '@angular/common';
+
 
 @Component({
   selector: 'app-work',
@@ -12,14 +13,15 @@ export class WorkComponent implements OnInit {
 
   constructor(private _location: Location) {
     this.currentYear = new Date().getFullYear();
-   }
+  }
 
-   @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll', ['$event'])
 
   ngOnInit(): void {
   }
 
   onWindowScroll() {
+    console.log("I hear ya")
     let element = document.querySelector('.top') as HTMLElement;
     if (window.pageYOffset > element.clientHeight) {
       element.classList.add('topScrolled');
