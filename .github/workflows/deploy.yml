@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           npm install
-          npm run build -- --base-href="https://aidenschrock.me"
+          npm run build -- --base-href /aidenschrock.github.io/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
