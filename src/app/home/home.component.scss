@@ -103,6 +103,7 @@ nav {
 
 .header-button {
   width: 220px;
+  color: white;
   background-color: #ff7f11;
   border-radius: 5px;
   font-family: "Arima Madurai", cursive;
@@ -158,36 +159,35 @@ nav {
     align-items: center;
     margin-right: 5%;
   }
+}
 
-  .pfp {
-    width: 500px;
-    height: auto;
+.pfp {
+  width: 500px;
+  height: auto;
+  margin: 10%;
+}
 
-    margin: 10%;
-  }
+.aboutIcons {
+  display: flex;
+  justify-content: space-between;
 
-  .aboutIcons {
-    display: flex;
-    justify-content: space-between;
+  margin-top: 5%;
+  width: 50%;
+  align-items: center;
+}
 
-    margin-top: 5%;
-    width: 50%;
-    align-items: center;
-  }
+.coffeeIcon {
+  width: 60px;
+  height: 60px;
+}
 
-  .coffeeIcon {
-    width: 60px;
-    height: 60px;
-  }
+.musicIcon {
+  width: 50px;
+  height: 50px;
+}
 
-  .musicIcon {
-    width: 50px;
-    height: 50px;
-  }
-
-  .pcIcon {
-    height: 80px;
-  }
+.pcIcon {
+  height: 80px;
 }
 
 .aboutIcon:hover {
@@ -240,19 +240,13 @@ nav {
       height: 80px;
       width: 80px;
     }
+
     .rightIcons {
       display: flex;
       align-items: center;
       fill: rgb(236, 231, 229);
-      height: 120px;
-      width: 120px;
-    }
-    .micIcon {
-      display: flex;
-      align-items: center;
-      fill: rgb(236, 231, 229);
-      height: 160px;
-      width: 160px;
+      height: 80px;
+      width: 80px;
     }
   }
 }
@@ -507,5 +501,94 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .top {
+    display: none;
+  }
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 88vw;
+  }
+
+  .header {
+    h3 {
+      text-align: center;
+      width: 80%;
+    }
+  }
+  .header-button {
+    width: 100px;
+    font-size: 20px;
+  }
+  .about {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .content {
+      p {
+        font-size: 0.6em;
+      }
+    }
+  }
+  .pfp {
+    margin: 2%;
+    width: 200px;
+  }
+
+  // .process {
+  //   .content {
+  //     .leftSteps {
+  //       .designIcon {
+  //         height: 200px;
+  //         width: 200px;
+  //       }
+  //     }
+  //   }
+  // }
+  .tools {
+    .content {
+      width: 60%;
+      margin-left: -10%;
+      .headers {
+        .developmentHeader {
+          margin-top: 10%;
+        }
+      }
+    }
+  }
+  mat-form-field {
+    width: 550px;
+  }
+  .contact {
+    .content {
+      flex-direction: column;
+      .contact-info {
+        margin: unset;
+        margin-top: 5%;
+      }
+    }
   }
 }
