@@ -159,36 +159,29 @@ nav {
   }
 }
 
-  .pfp {
-    width: 30%;
-    height: auto;
-
-    margin: 10%;
-  }
-
-  .aboutIcons {
-    display: flex;
-    justify-content: space-between;
+.pfp {
+  width: 30%;
+  height: auto;
+  margin: 10%;
+}
 
 .aboutIcons {
   display: flex;
   justify-content: space-between;
   margin-top: 5%;
-  width: 50%;
   align-items: center;
 }
 
-  .coffeeIcon {
-    width: 4em;
-  }
+.coffeeIcon {
+  width: 4em;
+}
 
-  .musicIcon {
-    width: 3.5em;
-  }
+.musicIcon {
+  width: 3.5em;
+}
 
-  .pcIcon {
-    height: 4.5em;
-  }
+.pcIcon {
+  height: 4.5em;
 }
 
 .aboutIcon:hover {
@@ -230,7 +223,6 @@ nav {
     p {
       width: 70%;
     }
-
 
     .processIcons {
       display: flex;
@@ -317,8 +309,6 @@ input {
   padding: 2%;
 }
 
-
-
 form {
   display: flex;
   flex-direction: column;
@@ -338,85 +328,100 @@ form {
 .contact {
   border-top: 1px solid rgb(236, 231, 229);
   width: 100%;
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+  }
+}
+
+.contactContent {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h2 {
-    margin-top: 5%;
-  }
-  h1 {
-    font-size: 25px;
-  }
-
-  .content {
-    margin: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-left: 6%;
-      p {
-        font-size: 35px;
-      }
-    }
-
-    .socials {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 100%;
-      margin-top: 30px;
-    }
-    .icon {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      text-align: center;
-      margin: 15px;
-      width: 60px;
-      height: 60px;
-      fill: rgb(236, 231, 229);
-    }
-    .icon:hover {
-      fill: #ff7f11;
-    }
-    p {
-      width: 550px;
-      margin-bottom: 5%;
-    }
+  margin-left: 6%;
+  p {
+    font-size: 2em;
+    width: 60%;
+    text-align: center;
   }
 }
 
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  fill: rgb(236, 231, 229);
+}
+
+.socialIcons:hover {
+  fill: #ff7f11;
+}
+
 label {
-  color: #ff7f11;
+  color: rgb(236, 231, 229);
   margin-top: 10%;
   text-align: left;
+  width: 100%;
 }
 
 input {
   border: none;
-  border-bottom: 2px solid #ff7f11;
+  border-bottom: 2px solid rgb(236, 231, 229);
   background: transparent;
+}
+
+input:focus {
+  border-bottom: 2px solid #ff7f11;
+}
+
+input:valid {
+  border-bottom: 2px solid #ff7f11;
 }
 
 textarea {
   border: none;
-  border-bottom: 2px solid #ff7f11;
+  border-bottom: 2px solid rgb(236, 231, 229);
   background: transparent;
   width: 33em;
   height: 5em;
 }
 
+textarea:focus {
+  border-bottom: 2px solid #ff7f11;
+}
+
+textarea:valid {
+  border-bottom: 2px solid #ff7f11;
+}
+
 .contactFormSubmit {
-  margin-top: 10px;
+  margin-top: 10%;
   background-color: #ff7f11;
   font-size: 25px;
   width: 150px;
@@ -481,28 +486,23 @@ form {
     font-size: 20px;
   }
   mat-form-field {
-    width:400px;
+    width: 400px;
   }
-.contact-info {
-  p{
-    font-size: 25px;
+  .contact-info {
+    p {
+      font-size: 25px;
+    }
   }
-  
-}
 }
 
 @media only screen and (max-width: 768px) {
-
 }
 
 @media only screen and (max-width: 600px) {
-
 }
 
 @media only screen and (max-width: 480px) {
-
 }
 
 @media only screen and (max-width: 400px) {
-
 }

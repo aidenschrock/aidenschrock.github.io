@@ -12,7 +12,7 @@ import { HostListener } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  contactForm: FormGroup
+  contactForm: FormGroup;
   currentYear: number;
 
   constructor(private viewportScroller: ViewportScroller, private builder: FormBuilder, private contact: ContactService, private _snackBar: MatSnackBar) {
@@ -24,8 +24,6 @@ export class HomeComponent {
     })
 
   }
-
-
 
   @HostListener('window:scroll', ['$event'])
 
