@@ -157,6 +157,7 @@ nav {
     align-items: center;
     margin-right: 5%;
   }
+}
 
   .pfp {
     width: 30%;
@@ -169,10 +170,13 @@ nav {
     display: flex;
     justify-content: space-between;
 
-    margin-top: 5%;
-    width: 50%;
-    align-items: center;
-  }
+.aboutIcons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  width: 50%;
+  align-items: center;
+}
 
   .coffeeIcon {
     width: 4em;
