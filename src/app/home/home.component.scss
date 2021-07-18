@@ -1,26 +1,26 @@
 h1 {
   font-family: "Arima Madurai", cursive;
-  font-size: 105.9px;
+  font-size: 6em;
 }
 
 h2 {
   font-family: "Caveat Brush", cursive;
-  font-size: 65.45px;
+  font-size: 3em;
 }
 
 h3 {
   font-family: "Caveat Brush", cursive;
-  font-size: 25px;
+  font-size: 2em;
 }
 
 h4 {
   font-family: "Poiret One", cursive;
-  font-size: 40.45px;
+  font-size: 1.5em;
 }
 
 p {
   font-family: "Poiret One", cursive;
-  font-size: 25px;
+  font-size: 1.3em;
 }
 
 .wrapper {
@@ -44,7 +44,7 @@ nav {
   justify-content: space-between;
   padding: 1%;
   font-family: "Poiret One", cursive;
-  font-size: 25px;
+  font-size: 1.5em;
   a {
     margin-right: 5%;
   }
@@ -79,7 +79,6 @@ nav {
 }
 .name {
   font-family: "Caveat Brush", cursive;
-  font-size: 25px;
   margin-left: 2%;
 }
 
@@ -102,13 +101,13 @@ nav {
 }
 
 .header-button {
-  width: 220px;
   background-color: #ff7f11;
+  color: white;
   border-radius: 5px;
   font-family: "Arima Madurai", cursive;
-  font-size: 40.45px;
+  font-size: 3em;
   margin-top: 5%;
-  padding: 1%;
+  padding: 1% 4% 1% 4%;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -160,7 +159,7 @@ nav {
   }
 
   .pfp {
-    width: 500px;
+    width: 30%;
     height: auto;
 
     margin: 10%;
@@ -176,17 +175,15 @@ nav {
   }
 
   .coffeeIcon {
-    width: 60px;
-    height: 60px;
+    width: 4em;
   }
 
   .musicIcon {
-    width: 50px;
-    height: 50px;
+    width: 3.5em;
   }
 
   .pcIcon {
-    height: 80px;
+    height: 4.5em;
   }
 }
 
@@ -202,18 +199,17 @@ nav {
 
 .process {
   border-top: 1px solid rgb(236, 231, 229);
-  padding-bottom: 100px;
+  padding-bottom: 10%;
   h2 {
     margin-top: 5%;
     margin-left: 10%;
   }
   .content {
     margin: 5%;
+    justify-content: space-between;
 
     .leftSteps {
       text-align: left;
-      margin-top: 50px;
-      margin-bottom: 50px;
       display: flex;
       align-items: center;
       width: 80%;
@@ -221,8 +217,6 @@ nav {
     .rightSteps {
       float: right;
       text-align: right;
-      margin-top: 50px;
-      margin-bottom: 50px;
       width: 80%;
       P {
         float: right;
@@ -233,26 +227,12 @@ nav {
       width: 70%;
     }
 
-    .leftIcons {
+
+    .processIcons {
       display: flex;
       align-items: center;
       fill: rgb(236, 231, 229);
-      height: 80px;
-      width: 80px;
-    }
-    .rightIcons {
-      display: flex;
-      align-items: center;
-      fill: rgb(236, 231, 229);
-      height: 120px;
-      width: 120px;
-    }
-    .micIcon {
-      display: flex;
-      align-items: center;
-      fill: rgb(236, 231, 229);
-      height: 160px;
-      width: 160px;
+      width: 4em;
     }
   }
 }
@@ -260,121 +240,80 @@ nav {
 .tools {
   border-top: 1px solid rgb(236, 231, 229);
   width: 100%;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   h2 {
     margin-top: 5%;
   }
-  .content {
-    width: 45%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5%;
-    margin-left: -5%;
-    .headers {
-      margin-left: 0%;
-      text-align: right;
-      .developmentHeader {
-        margin-top: 55%;
-      }
-    }
-    .icons {
-      margin-right: 0;
-      margin-left: 5%;
-      cursor: pointer;
-      .icon {
-        width: 70px;
-        height: 70px;
-        margin-right: 25%;
-      }
-      .designIcons {
-        display: flex;
-        .figma {
-          width: 100px;
-          height: 100px;
-        }
-      }
-      .developmentIcons {
-        margin-top: 35%;
-        display: flex;
-      }
-    }
-  }
+}
+
+.toolsContent {
+  margin: 5%;
+  margin-left: -10%;
+}
+
+.toolHeaderWrappers {
+  width: 10em;
+  margin-right: 5%;
+}
+
+.toolHeaders {
+  font-size: 1.8em;
+  text-align: right;
+}
+
+.toolIcons {
+  width: 4.5em;
+  height: 4.5em;
+  margin-right: 25%;
+}
+
+.toolRows {
+  align-items: center;
 }
 
 .work {
   border-top: 1px solid rgb(236, 231, 229);
   width: 100%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   h2 {
     margin-top: 5%;
   }
-  .content {
-    margin: 5%;
-    p {
-      font-size: 35px;
-      margin-top: 2%;
-    }
-  }
-  .siteMock {
-    width: 500px;
-  }
-  .siteMock:hover {
-    cursor: pointer;
+}
+
+.workContent {
+  margin: 5%;
+  p {
+    font-size: 35px;
+    margin-top: 2%;
   }
 }
 
+.siteMock {
+  width: 500px;
+}
+
+.siteMock:hover {
+  cursor: pointer;
+}
+
 mat-form-field {
-  width: 600px;
+  width: 35em;
   color: rgb(236, 231, 229);
   margin-top: 5%;
 }
 
 input {
-  width: 500px;
+  width: 33em;
   height: 3em;
   border-radius: 5px;
   padding: 2%;
 }
 
-::ng-deep .mat-form-field-placeholder {
-  margin-left: 5px;
-  color: rgb(236, 231, 229) !important;
-}
 
-::ng-deep .mat-form-field-label {
-  color: rgb(236, 231, 229) !important;
-  font-family: "Poiret One", cursive !important;
-  font-size: 20px !important;
-}
-
-::ng-deep .mat-input-element {
-  caret-color: rgb(236, 231, 229) !important;
-  overflow-wrap: break-word;
-}
-
-::ng-deep .mat-focused .mat-form-field-label {
-  /*change color of label*/
-  color: #ff7f11 !important;
-}
-
-::ng-deep.mat-form-field-underline {
-  /*change color of underline*/
-  background-color: #ece7e5 !important;
-}
-
-::ng-deep.mat-form-field-ripple {
-  /*change color of underline when focused*/
-  background-color: #ff7f11 !important;
-}
 
 form {
   display: flex;
@@ -452,6 +391,26 @@ form {
   }
 }
 
+label {
+  color: #ff7f11;
+  margin-top: 10%;
+  text-align: left;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #ff7f11;
+  background: transparent;
+}
+
+textarea {
+  border: none;
+  border-bottom: 2px solid #ff7f11;
+  background: transparent;
+  width: 33em;
+  height: 5em;
+}
+
 .contactFormSubmit {
   margin-top: 10px;
   background-color: #ff7f11;
@@ -508,4 +467,38 @@ form {
     justify-content: center;
     align-items: center;
   }
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 959px) {
+  .about {
+    font-size: 20px;
+  }
+  mat-form-field {
+    width:400px;
+  }
+.contact-info {
+  p{
+    font-size: 25px;
+  }
+  
+}
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 400px) {
+
 }

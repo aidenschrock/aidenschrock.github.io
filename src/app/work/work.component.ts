@@ -34,3 +34,4 @@ export class WorkComponent implements OnInit {
     this._location.back();
   }
 }
+
