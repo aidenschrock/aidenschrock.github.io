@@ -1,3 +1,5 @@
+@import "../../styles.scss";
+
 h1 {
   font-family: "Arima Madurai", cursive;
   font-size: 6em;
@@ -24,8 +26,6 @@ p {
 }
 
 .wrapper {
-  width: 99vw;
-  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
   grid-template-rows: 4em auto 4em;
@@ -42,7 +42,7 @@ nav {
   margin-right: 5%;
   align-items: center;
   justify-content: space-between;
-  padding: 1%;
+  padding: 1% 0 1% 0;
   font-family: "Poiret One", cursive;
   font-size: 1.5em;
   a {
@@ -98,6 +98,7 @@ nav {
   align-items: center;
   margin-bottom: 10%;
   margin-top: 10%;
+  text-align: center;
 }
 
 .header-button {
@@ -106,7 +107,7 @@ nav {
   border-radius: 5px;
   font-family: "Arima Madurai", cursive;
   font-size: 3em;
-  margin-top: 5%;
+  margin-top: 15%;
   padding: 1% 4% 1% 4%;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -149,16 +150,16 @@ nav {
   h2 {
     margin-top: 5%;
   }
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: right;
-    align-items: center;
-    margin-right: 5%;
-  }
 }
 
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  align-items: center;
+  margin-right: 5%;
+}
 .pfp {
   width: 30%;
   height: auto;
@@ -170,6 +171,7 @@ nav {
   justify-content: space-between;
   margin-top: 5%;
   align-items: center;
+  width: 60%;
 }
 
 .coffeeIcon {
@@ -201,38 +203,16 @@ nav {
     margin-top: 5%;
     margin-left: 10%;
   }
-  .content {
-    margin: 5%;
-    justify-content: space-between;
-
-    .leftSteps {
-      text-align: left;
-      display: flex;
-      align-items: center;
-      width: 80%;
-    }
-    .rightSteps {
-      float: right;
-      text-align: right;
-      width: 80%;
-      P {
-        float: right;
-        margin-left: auto;
-      }
-    }
-    p {
-      width: 70%;
-    }
-
-    .processIcons {
-      display: flex;
-      align-items: center;
-      fill: rgb(236, 231, 229);
-      width: 4em;
-    }
-  }
 }
 
+.processContent {
+  margin: 5%;
+  justify-content: space-between;
+
+  p {
+    width: 70%;
+  }
+}
 .tools {
   border-top: 1px solid rgb(236, 231, 229);
   width: 100%;
@@ -244,6 +224,34 @@ nav {
   }
 }
 
+.leftSteps {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 5%;
+}
+.rightSteps {
+  float: right;
+  text-align: right;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 5%;
+  .processIcons {
+    float: left;
+    margin-right: auto;
+  }
+  P {
+    float: right;
+    margin-left: auto;
+  }
+}
+.processIcons {
+  display: flex;
+  align-items: center;
+  fill: rgb(236, 231, 229);
+  width: 4em;
+}
 .toolsContent {
   margin: 5%;
   margin-left: -10%;
@@ -289,24 +297,11 @@ nav {
 }
 
 .siteMock {
-  width: 500px;
+  width: 30em;
 }
 
 .siteMock:hover {
   cursor: pointer;
-}
-
-mat-form-field {
-  width: 35em;
-  color: rgb(236, 231, 229);
-  margin-top: 5%;
-}
-
-input {
-  width: 33em;
-  height: 3em;
-  border-radius: 5px;
-  padding: 2%;
 }
 
 form {
@@ -390,14 +385,38 @@ label {
   width: 100%;
 }
 
+input[type="text"] {
+  background-color: transparent;
+  border-bottom: 2px solid rgb(236, 231, 229);
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-bottom: 2px solid #ff7f11;
+}
+
+input[type="email"] {
+  background-color: transparent;
+  border-bottom: 2px solid rgb(236, 231, 229);
+}
+
+input[type="email"]:focus {
+  border-bottom: 2px solid #ff7f11;
+}
+
 input {
   border: none;
   border-bottom: 2px solid rgb(236, 231, 229);
   background: transparent;
+  width: 40em;
+  height: 3em;
+  border-radius: 5px;
+  padding: 2%;
 }
 
 input:focus {
   border-bottom: 2px solid #ff7f11;
+  outline: none;
 }
 
 input:valid {
@@ -408,7 +427,7 @@ textarea {
   border: none;
   border-bottom: 2px solid rgb(236, 231, 229);
   background: transparent;
-  width: 33em;
+  width: 40em;
   height: 5em;
 }
 
@@ -478,31 +497,97 @@ form {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-}
-
-@media only screen and (max-width: 959px) {
-  .about {
-    font-size: 20px;
+@media only screen and (max-width: $xs) {
+  .header {
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 1.3em;
+    }
+    h3 {
+      font-size: 1.5em;
+      width: 90%;
+    }
   }
-  mat-form-field {
-    width: 400px;
+  p {
+    font-size: 1.2em;
+  }
+  .header-button {
+    font-size: 2em;
+  }
+  .pfp {
+    width: 60%;
+    margin: unset;
+  }
+  .about {
+    p {
+      text-align: center;
+      width: 90%;
+    }
+  }
+  .aboutIcons {
+    width: 80%;
+  }
+  .processContent {
+    p {
+      width: 80%;
+    }
+  }
+  .leftSteps {
+    width: 100%;
+    margin-bottom: 15%;
+  }
+  .rightSteps {
+    width: 100%;
+    margin-bottom: 15%;
+  }
+  .aboutContent {
+    margin-right: 0;
+  }
+  .processIcons {
+    width: 3em;
+  }
+
+  .toolsContent {
+    width: 100%;
+    margin: unset;
+    padding-bottom: 10%;
+  }
+  .toolRows {
+    width: 100%;
+    margin-top: 5%;
+  }
+  .toolHeaderWrappers {
+    width: 100%;
+    text-align: center;
+  }
+  .toolHeaders {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .toolIconWrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  .toolIcons {
+    width: 3.5em;
+    height: 3.5em;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .siteMock {
+    width: 25em;
   }
   .contact-info {
     p {
-      font-size: 25px;
+      width: 100%;
     }
   }
-}
-
-@media only screen and (max-width: 768px) {
-}
-
-@media only screen and (max-width: 600px) {
-}
-
-@media only screen and (max-width: 480px) {
-}
-
-@media only screen and (max-width: 400px) {
+  input {
+    width: 20em;
+  }
+  textarea {
+    width: 20em;
+  }
 }

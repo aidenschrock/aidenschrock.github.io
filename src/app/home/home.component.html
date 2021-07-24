@@ -27,13 +27,18 @@
         Let's Talk!
       </button>
     </div>
-    <div id="about" class="about">
+    <div
+      fxLayout.lt-md="column"
+      fxLayoutAlign.lt-md="center center"
+      id="about"
+      class="about"
+    >
       <img
         alt="Headshot of Aiden Schrock"
         class="pfp"
         src="../../assets/pfp.png"
       />
-      <div class="content">
+      <div class="aboutContent">
         <h2>About</h2>
         <p>
           I’m Aiden, a web developer from the Southern United States. I have a
@@ -98,7 +103,7 @@
     </div>
     <div class="process">
       <h2>Process</h2>
-      <div class="content">
+      <div class="processContent">
         <div class="leftSteps">
           <div class="titleDescription">
             <h4>01. Interview/Research</h4>
@@ -309,11 +314,16 @@
     <div class="tools">
       <h2>Tools</h2>
       <div fxLayoutGap="25px" fxLayout="column" class="toolsContent">
-        <div class="toolRows" fxLayout="row">
+        <div
+          class="toolRows"
+          fxLayout="row"
+          fxLayout.lt-md="column"
+          fxLayoutAlign.lt-md="center center"
+        >
           <div class="toolHeaderWrappers">
             <h4 class="toolHeaders">Design</h4>
           </div>
-          <div fxLayout="row">
+          <div class="toolIconWrapper" fxLayout="row">
             <img
               class="toolIcons"
               src="../../assets/adobe.svg"
@@ -331,11 +341,16 @@
             />
           </div>
         </div>
-        <div class="toolRows" fxLayout="row">
+        <div
+          class="toolRows"
+          fxLayout="row"
+          fxLayout.lt-md="column"
+          fxLayoutAlign.lt-md="center center"
+        >
           <div class="toolHeaderWrappers">
             <h4 class="toolHeaders">Development</h4>
           </div>
-          <div fxLayout="row">
+          <div class="toolIconWrapper" fxLayout="row">
             <img
               matTooltip="Amazon Web Services"
               class="toolIcons"
@@ -368,26 +383,7 @@
     </div>
     <div id="contact" class="contact">
       <h2>Contact</h2>
-      <div class="contactContent">
-        <div>
-          <form
-            [formGroup]="contactForm"
-            class="contact-form"
-            (ngSubmit)="onSubmit(contactForm.value)"
-          >
-            <label>Name</label>
-            <input type="text" formControlName="Fullname" required />
-            <label>Email</label>
-            <input type="email" formControlName="Email" required />
-            <label>Message</label>
-            <textarea
-              class="message-field"
-              formControlName="Comment"
-              required
-            ></textarea>
-            <button class="contactFormSubmit" type="submit">Send</button>
-          </form>
-        </div>
+      <div fxLayout.lt-md="column" class="contactContent">
         <div class="contact-info">
           <p>
             If you’re interested in working with me, please reach out to me
@@ -458,6 +454,25 @@
               </svg>
             </a>
           </div>
+        </div>
+        <div>
+          <form
+            [formGroup]="contactForm"
+            class="contact-form"
+            (ngSubmit)="onSubmit(contactForm.value)"
+          >
+            <label>Name</label>
+            <input type="text" formControlName="Fullname" required />
+            <label>Email</label>
+            <input type="email" formControlName="Email" required />
+            <label>Message</label>
+            <textarea
+              class="message-field"
+              formControlName="Comment"
+              required
+            ></textarea>
+            <button class="contactFormSubmit" type="submit">Send</button>
+          </form>
         </div>
       </div>
     </div>
