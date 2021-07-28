@@ -39,14 +39,12 @@ $aidenschrock-github-io-theme: mat.define-light-theme(
 // that you are using.
 @include mat.all-component-themes($aidenschrock-github-io-theme);
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
 /* You can add global styles to this file, and also import other style files */
 html {
   background-color: rgb(22, 22, 24);
   background-image: url("./assets/cartographer.png");
   color: rgb(236, 231, 229);
+  scroll-behavior: smooth;
 }
 
 html,

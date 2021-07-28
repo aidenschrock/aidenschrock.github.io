@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <div class="top">
+  <div fxHide.lt-sm class="top">
     <div id="top" class="topContent">
       <h4 class="name">Aiden Schrock</h4>
 
@@ -15,7 +15,7 @@
     </div>
   </div>
   <div id="main" class="main">
-    <div id="header" class="header">
+    <section id="header" class="header">
       <h1>
         Web Design & <br />
         Development
@@ -26,8 +26,8 @@
       <button (click)="onClick('contact')" class="header-button">
         Let's Talk!
       </button>
-    </div>
-    <div
+    </section>
+    <section
       fxLayout.lt-md="column"
       fxLayoutAlign.lt-md="center center"
       id="about"
@@ -100,8 +100,8 @@
           </a>
         </div>
       </div>
-    </div>
-    <div class="process">
+    </section>
+    <section class="process">
       <h2>Process</h2>
       <div class="processContent">
         <div class="leftSteps">
@@ -310,7 +310,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <div class="tools">
       <h2>Tools</h2>
       <div fxLayoutGap="25px" fxLayout="column" class="toolsContent">
@@ -381,7 +381,7 @@
         <p>RECOLUDE</p>
       </div>
     </div>
-    <div id="contact" class="contact">
+    <section id="contact" class="contact">
       <h2>Contact</h2>
       <div fxLayout.lt-md="column" class="contactContent">
         <div class="contact-info">
@@ -475,10 +475,70 @@
           </form>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 
-  <div class="footer">
+  <div fxHide.lt-sm class="footer">
     <div class="content">&#169;{{ currentYear }} Aiden Schrock</div>
+  </div>
+</div>
+<div class="mobileNavbarWrapper">
+  <div fxHide.gt-sm class="mobileNavbar">
+    <a #home (click)="onClick('main')"
+      ><svg
+        class="navbarIcons"
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"
+        />
+      </svg>
+    </a>
+
+    <a #about (click)="onClick('about')"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M10.25 13c0 .69-.56 1.25-1.25 1.25S7.75 13.69 7.75 13s.56-1.25 1.25-1.25 1.25.56 1.25 1.25zM15 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm7 .25c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2s10 4.48 10 10zM10.66 4.12C12.06 6.44 14.6 8 17.5 8c.46 0 .91-.05 1.34-.12C17.44 5.56 14.9 4 12 4c-.46 0-.91.05-1.34.12zM4.42 9.47c1.71-.97 3.03-2.55 3.66-4.44C6.37 6 5.05 7.58 4.42 9.47zM20 12c0-.78-.12-1.53-.33-2.24-.7.15-1.42.24-2.17.24-3.13 0-5.92-1.44-7.76-3.69C8.69 8.87 6.6 10.88 4 11.86c.01.04 0 .09 0 .14 0 4.41 3.59 8 8 8s8-3.59 8-8z"
+        />
+      </svg>
+    </a>
+
+    <a #work (click)="onClick('work')"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M14 6V4h-4v2h4zM4 8v11h16V8H4zm16-2c1.11 0 2 .89 2 2v11c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2l.01-11c0-1.11.88-2 1.99-2h4V4c0-1.11.89-2 2-2h4c1.11 0 2 .89 2 2v2h4z"
+        />
+      </svg>
+    </a>
+
+    <a #contact (click)="onClick('contact')">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M12 1.95c-5.52 0-10 4.48-10 10s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57v-1.43c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57v-1.43c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"
+        />
+      </svg>
+    </a>
   </div>
 </div>

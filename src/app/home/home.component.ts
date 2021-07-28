@@ -6,6 +6,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { HostListener } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -22,8 +23,10 @@ export class HomeComponent {
       Email: new FormControl('', [Validators.required, Validators.email]),
       Comment: new FormControl('', [Validators.required])
     })
-
   }
+
+
+
 
   @HostListener('window:scroll', ['$event'])
 
