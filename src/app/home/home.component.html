@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <div fxHide.lt-sm class="top">
+  <div fxHide.lt-md class="top">
     <div id="top" class="topContent">
       <h4 class="name">Aiden Schrock</h4>
 
@@ -15,7 +15,7 @@
     </div>
   </div>
   <div id="main" class="main">
-    <section id="header" class="header">
+    <section #header class="header">
       <h1>
         Web Design & <br />
         Development
@@ -32,13 +32,14 @@
       fxLayoutAlign.lt-md="center center"
       id="about"
       class="about"
+      #about
     >
       <img
         alt="Headshot of Aiden Schrock"
         class="pfp"
         src="../../assets/pfp.png"
       />
-      <div class="aboutContent">
+      <div #about class="aboutContent">
         <h2>About</h2>
         <p>
           I’m Aiden, a web developer from the Southern United States. I have a
@@ -370,7 +371,7 @@
         </div>
       </div>
     </div>
-    <div fxLayout="column" id="work" class="work">
+    <div #work fxLayout="column" id="work" class="work">
       <h2>Work</h2>
       <div class="workContent">
         <img
@@ -383,7 +384,7 @@
     </div>
     <section id="contact" class="contact">
       <h2>Contact</h2>
-      <div fxLayout.lt-md="column" class="contactContent">
+      <div #contact fxLayout.lt-md="column" class="contactContent">
         <div class="contact-info">
           <p>
             If you’re interested in working with me, please reach out to me
@@ -484,7 +485,7 @@
 </div>
 <div class="mobileNavbarWrapper">
   <div fxHide.gt-sm class="mobileNavbar">
-    <a #home (click)="onClick('main')"
+    <a (click)="onClick('main')" [ngClass]="{'active': currentActive === 1}"
       ><svg
         class="navbarIcons"
         xmlns="http://www.w3.org/2000/svg"
@@ -499,8 +500,9 @@
       </svg>
     </a>
 
-    <a #about (click)="onClick('about')"
+    <a  (click)="onClick('about')" [ngClass]="{'active': currentActive === 2}"
       ><svg
+      class="navbarIcons"
         xmlns="http://www.w3.org/2000/svg"
         height="24px"
         viewBox="0 0 24 24"
@@ -513,8 +515,9 @@
       </svg>
     </a>
 
-    <a #work (click)="onClick('work')"
+    <a (click)="onClick('work')" [ngClass]="{'active': currentActive === 3}"
       ><svg
+      class="navbarIcons"
         xmlns="http://www.w3.org/2000/svg"
         height="24px"
         viewBox="0 0 24 24"
@@ -527,12 +530,14 @@
       </svg>
     </a>
 
-    <a #contact (click)="onClick('contact')">
+    <a (click)="onClick('contact')" [ngClass]="{'active': currentActive === 4}">
       <svg
+        class="navbarIcons"
         xmlns="http://www.w3.org/2000/svg"
         height="24px"
         viewBox="0 0 24 24"
         width="24px"
+        
       >
         <path d="M0 0h24v24H0V0z" fill="none" />
         <path

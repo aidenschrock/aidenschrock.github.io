@@ -3,12 +3,18 @@ h2 {
   font-size: 75px;
 }
 
+h3 {
+ font-size: 1.5em;
+ font-family: "Poiret One", cursive;
+}
+
 h4 {
   font-family: "Poiret One", cursive;
   font-size: 20px;
   margin-top: 2%;
   margin-top: 5%;
 }
+
 
 .wrapper {
   width: 99vw;
@@ -91,6 +97,10 @@ nav {
   align-items: center;
   margin-bottom: 10%;
   margin-top: 10%;
+}
+
+.headerImage {
+  width: 80%;
 }
 
 .gif {

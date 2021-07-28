@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { ContactService } from '../contact.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { HostListener } from '@angular/core';
+
 
 
 
@@ -12,9 +12,21 @@ import { HostListener } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
   contactForm: FormGroup;
   currentYear: number;
+
+  public currentActive = 0;
+  public homeOffset: number =0;
+  public aboutOffset: number =0;
+  public workOffset: number =0;
+  public contactOffset: number =0;
+
+  @ViewChild('header') homeElement!: ElementRef;
+  @ViewChild('about') aboutElement!: ElementRef;
+  @ViewChild('work') workElement!: ElementRef;
+  @ViewChild('contact') contactElement!: ElementRef;
+
 
   constructor(private viewportScroller: ViewportScroller, private builder: FormBuilder, private contact: ContactService, private _snackBar: MatSnackBar) {
     this.currentYear = new Date().getFullYear();
@@ -23,13 +35,11 @@ export class HomeComponent {
       Email: new FormControl('', [Validators.required, Validators.email]),
       Comment: new FormControl('', [Validators.required])
     })
+    
+    
   }
 
-
-
-
   @HostListener('window:scroll', ['$event'])
-
   onWindowScroll() {
     let element = document.querySelector('.top') as HTMLElement;
     if (window.pageYOffset > element.clientHeight) {
@@ -37,6 +47,7 @@ export class HomeComponent {
     } else {
       element.classList.remove('topScrolled');
     }
+    this.checkOffsetTop()
   }
 
   public onClick(elementId: string): void {
@@ -57,4 +68,30 @@ export class HomeComponent {
   }
 
 
+
+
+  ngAfterViewInit() {
+    this.homeOffset = this.homeElement.nativeElement.offsetTop;
+    this.aboutOffset = this.aboutElement.nativeElement.offsetTop - 5;
+    this.workOffset = this.workElement.nativeElement.offsetTop - 5;
+    this.contactOffset = this.contactElement.nativeElement.offsetTop;
+  }
+
+
+  
+  checkOffsetTop() {
+    if (window.pageYOffset >= 0 && window.pageYOffset < this.aboutOffset) {
+      this.currentActive = 1;
+    } else if (window.pageYOffset >= this.aboutOffset && window.pageYOffset < this.workOffset) {
+      this.currentActive = 2;
+    } else if (window.pageYOffset >= this.workOffset && window.pageYOffset < this.contactOffset) {
+      this.currentActive = 3;
+    } else if (window.pageYOffset >= this.contactOffset) {
+      this.currentActive = 4;
+    } else {
+      this.currentActive = 0;
+    }
+
+
+}
 }

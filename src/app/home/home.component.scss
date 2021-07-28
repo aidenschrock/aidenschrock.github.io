@@ -352,7 +352,7 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 6%;
+  
   p {
     font-size: 2em;
     width: 60%;
@@ -524,12 +524,6 @@ form {
   display: flex;
   padding: 0 5% 0 5%;
   justify-content: space-between;
-
-  svg {
-    fill: whitesmoke;
-    width: 35px;
-    height: 35px;
-  }
 }
 
 .mobileNavbar a {
@@ -542,11 +536,76 @@ form {
   font-size: 17px;
 }
 
-/* Add a color to the active/current link */
-.mobileNavbar a:active {
-  svg {
-    fill: #ff7f11;
+.navbarIcons {
+  fill: whitesmoke;
+  width: 35px;
+  height: 35px;
+}
+
+.active .navbarIcons {
+  fill: #ff7f11;
+}
+
+@media only screen and (max-width: $lg){
+  .contact-info {
+    p {
+      font-size: 1.8em;
+      width: 80%;
+    }
   }
+
+  input {
+    width: 25em;
+  }
+
+  textarea {
+    width: 25em;
+  }
+}
+
+@media only screen and (max-width: $md) {
+  h1{
+    font-size: 5em;
+  }
+
+  h3 {
+    font-size: 1.5sem;
+  }
+  .aboutContent {
+    width: 90%;
+    text-align: center;
+  }
+.pfp {
+  width: 60%;
+}
+.contact-info {
+  p {
+    width: 80%;
+  }
+}
+.main {
+  border: none;
+}
+
+.about {
+  border: none;
+}
+
+.process {
+  border: none;
+}
+
+.tools {
+  border: none;
+}
+
+.work {
+  border: none;
+}
+
+.contact {
+  border: none;
+}
 }
 
 @media only screen and (max-width: $sm) {
@@ -556,42 +615,34 @@ form {
     width: 98%;
     overflow: hidden;
   }
-
-  .main {
-    border: none;
-  }
-
-  .about {
-    border: none;
-  }
-
-  .process {
-    border: none;
-  }
-
-  .tools {
-    border: none;
-  }
-
-  .work {
-    border: none;
-  }
-
-  .contact {
-    border: none;
-  }
-
+  
+.siteMock {
+  width: 18em;
+}
+  
   .contactContent {
-    padding-bottom: 20%;
+    padding-bottom: 30%;
+  }
+
+  .contact-info {
+    padding-bottom: 10%;
+  }
+
+  input {
+    width: 30em;
+  }
+
+  textarea {
+    width: 30em;
   }
 }
 @media only screen and (max-width: $xs) {
   .header {
     h1 {
-      font-size: 3em;
+      font-size: 2.8em;
     }
     h2 {
-      font-size: 1.3em;
+      font-size: 1em;
     }
     h3 {
       font-size: 1.5em;
@@ -605,7 +656,7 @@ form {
     font-size: 2em;
   }
   .pfp {
-    width: 60%;
+    width: 90%;
     margin: unset;
   }
   .about {
@@ -664,18 +715,22 @@ form {
     margin-right: 10%;
     margin-left: 10%;
   }
-  .siteMock {
-    width: 25em;
-  }
+
   .contact-info {
     p {
       width: 100%;
     }
   }
   input {
-    width: 20em;
+    width: 25em;
   }
   textarea {
+    width: 25em;
+  }
+}
+
+@media only screen and (max-width: $xxs){
+  input {
     width: 20em;
   }
 }
