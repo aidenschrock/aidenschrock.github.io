@@ -87,6 +87,10 @@ nav {
   margin-left: 2%;
 }
 
+.name:hover {
+  color: #ff7f11;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -192,12 +196,17 @@ nav {
   height: 4.5em;
 }
 
-.aboutIcon:hover {
+.pcIcon:hover {
   fill: #ff7f11;
   cursor: pointer;
 }
 
-.pcIcon:hover {
+.coffeeIcon:hover {
+  fill: #ff7f11;
+  cursor: pointer;
+}
+
+.musicIcon:hover {
   fill: #ff7f11;
   cursor: pointer;
 }
@@ -352,7 +361,7 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   p {
     font-size: 2em;
     width: 60%;
@@ -546,7 +555,7 @@ form {
   fill: #ff7f11;
 }
 
-@media only screen and (max-width: $lg){
+@media only screen and (max-width: $lg) {
   .contact-info {
     p {
       font-size: 1.8em;
@@ -564,7 +573,7 @@ form {
 }
 
 @media only screen and (max-width: $md) {
-  h1{
+  h1 {
     font-size: 5em;
   }
 
@@ -575,37 +584,37 @@ form {
     width: 90%;
     text-align: center;
   }
-.pfp {
-  width: 60%;
-}
-.contact-info {
-  p {
-    width: 80%;
+  .pfp {
+    width: 60%;
   }
-}
-.main {
-  border: none;
-}
+  .contact-info {
+    p {
+      width: 80%;
+    }
+  }
+  .main {
+    border: none;
+  }
 
-.about {
-  border: none;
-}
+  .about {
+    border: none;
+  }
 
-.process {
-  border: none;
-}
+  .process {
+    border: none;
+  }
 
-.tools {
-  border: none;
-}
+  .tools {
+    border: none;
+  }
 
-.work {
-  border: none;
-}
+  .work {
+    border: none;
+  }
 
-.contact {
-  border: none;
-}
+  .contact {
+    border: none;
+  }
 }
 
 @media only screen and (max-width: $sm) {
@@ -615,11 +624,11 @@ form {
     width: 98%;
     overflow: hidden;
   }
-  
-.siteMock {
-  width: 18em;
-}
-  
+
+  .siteMock {
+    width: 18em;
+  }
+
   .contactContent {
     padding-bottom: 30%;
   }
@@ -729,7 +738,7 @@ form {
   }
 }
 
-@media only screen and (max-width: $xxs){
+@media only screen and (max-width: $xxs) {
   input {
     width: 20em;
   }

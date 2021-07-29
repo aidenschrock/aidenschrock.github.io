@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { ContactService } from '../contact.service';
@@ -17,10 +17,10 @@ export class HomeComponent implements AfterViewInit {
   currentYear: number;
 
   public currentActive = 0;
-  public homeOffset: number =0;
-  public aboutOffset: number =0;
-  public workOffset: number =0;
-  public contactOffset: number =0;
+  public homeOffset: number = 0;
+  public aboutOffset: number = 0;
+  public workOffset: number = 0;
+  public contactOffset: number = 0;
 
   @ViewChild('header') homeElement!: ElementRef;
   @ViewChild('about') aboutElement!: ElementRef;
@@ -35,8 +35,8 @@ export class HomeComponent implements AfterViewInit {
       Email: new FormControl('', [Validators.required, Validators.email]),
       Comment: new FormControl('', [Validators.required])
     })
-    
-    
+
+
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -78,7 +78,7 @@ export class HomeComponent implements AfterViewInit {
   }
 
 
-  
+
   checkOffsetTop() {
     if (window.pageYOffset >= 0 && window.pageYOffset < this.aboutOffset) {
       this.currentActive = 1;
@@ -93,5 +93,5 @@ export class HomeComponent implements AfterViewInit {
     }
 
 
-}
+  }
 }
