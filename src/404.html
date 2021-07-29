@@ -1,7 +1,3 @@
----
-permalink: /404.html
----
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,6 +21,11 @@ permalink: /404.html
       href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&family=Caveat+Brush&family=Poiret+One&display=swap"
       rel="stylesheet"
     />
+
+    <script>
+      sessionStorage.redirect = location.href;
+    </script>
+    <meta http-equiv="refresh" content="0;URL='/'"></meta>
   </head>
   <body **dark**>
     <app-root></app-root>
