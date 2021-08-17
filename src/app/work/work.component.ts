@@ -9,9 +9,10 @@ import { Location } from '@angular/common';
 })
 export class WorkComponent implements OnInit {
   currentYear: number;
-
+  work: string;
   constructor(private _location: Location) {
     this.currentYear = new Date().getFullYear();
+this.work="Recolude"
   }
 
 
@@ -31,6 +32,10 @@ export class WorkComponent implements OnInit {
 
   backClicked() {
     this._location.back();
+  }
+
+  navigateWork(){
+return "allrecipes"
   }
 }
 
