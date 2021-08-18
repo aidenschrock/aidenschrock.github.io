@@ -309,6 +309,15 @@ nav {
   p {
     font-size: 35px;
     margin-top: 2%;
+    width: auto;
+  }
+  p:hover {
+    cursor: pointer;
+  }
+  a {
+    color: white;
+    font-family: "Poiret One", cursive;
+    text-decoration: none;
   }
 }
 
@@ -570,6 +579,9 @@ form {
 
   textarea {
     width: 25em;
+  }
+  .siteMock {
+    width: 20em;
   }
 }
 

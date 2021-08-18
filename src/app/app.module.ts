@@ -16,15 +16,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from './contact.service';
 import { WorkComponent } from './work/work.component';
 import { RecoludeComponent } from './work/recolude/recolude.component';
-import { AllrecipesComponent } from './work/allrecipes/allrecipes.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     WorkComponent,
-    RecoludeComponent,
-    AllrecipesComponent
+    RecoludeComponent
   ],
   imports: [
     BrowserModule,

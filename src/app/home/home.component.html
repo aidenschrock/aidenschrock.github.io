@@ -386,14 +386,34 @@
     </div>
     <div #work fxLayout="column" id="work" class="work">
       <h2>Work</h2>
-      <div class="workContent">
-        <img
-          alt="Recolude Website Mock"
-          [routerLink]="['/work']"
-          class="siteMock"
-          src="../../assets/RecoludeMock.png"
-        />
-        <p>RECOLUDE</p>
+      <div
+        fxLayout.lt-md="column"
+        fxLayoutAlign.lt-md="center center"
+        fxLayout="row"
+        fxLayoutGap="10%"
+        class="workContent"
+      >
+        <div [routerLink]="['/work']" fxLayout="column">
+          <img
+            alt="Recolude Website Mock"
+            class="siteMock"
+            src="../../assets/RecoludeMock.png"
+          />
+          <p>RECOLUDE</p>
+        </div>
+        <div fxLayout="column">
+          <a
+            target="_blank"
+            href="https://medium.com/@aidenschrock/allrecipes-ux-design-study-redesigning-the-most-popular-cooking-site-e04c73ed58a1"
+          >
+            <img
+              alt="Allrecipes Website Mock"
+              class="siteMock"
+              src="../../assets/AllrecipesMock.png"
+            />
+            <p>Allrecipes-Product Redesign</p>
+          </a>
+        </div>
       </div>
     </div>
     <section id="contact" class="contact">
