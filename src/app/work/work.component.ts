@@ -12,7 +12,7 @@ export class WorkComponent implements OnInit {
   work: string;
   constructor(private _location: Location) {
     this.currentYear = new Date().getFullYear();
-this.work="Recolude"
+    this.work = "Recolude"
   }
 
 
@@ -34,8 +34,8 @@ this.work="Recolude"
     this._location.back();
   }
 
-  navigateWork(){
-return "allrecipes"
+  navigateWork() {
+    return "allrecipes"
   }
 }
 

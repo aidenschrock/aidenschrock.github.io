@@ -1,22 +1,22 @@
 @import "../../styles.scss";
 
-
 html {
   scroll-behavior: smooth;
 }
 
 a {
-  font-family: "Arima Madurai", cursive;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 1.5em;
 }
 
 h3 {
   font-size: 1.5em;
-  font-family: "Poiret One", cursive;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
 }
 
 p {
-  font-family: "Poiret One", cursive;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 1.3em;
 }
 
@@ -38,7 +38,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1%;
-  font-family: "Poiret One", cursive;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
   a {
     margin-right: 5%;
@@ -73,7 +73,7 @@ nav {
 }
 
 .name {
-  font-family: "Caveat Brush", cursive;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   margin-left: 2%;
 }
 
@@ -88,9 +88,7 @@ nav {
   justify-content: center;
   align-items: center;
   grid-area: main;
-  border: 1px solid white;
 }
-
 
 .footer {
   display: block;

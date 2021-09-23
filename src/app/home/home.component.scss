@@ -5,31 +5,39 @@ html {
 }
 
 h1 {
-  font-family: "Arima Madurai", cursive;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
   font-size: 6em;
+  margin-bottom: unset;
 }
 
 h2 {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
   font-size: 3em;
 }
 
 h3 {
-  font-family: "Caveat Brush", cursive;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
   font-size: 2em;
 }
 
 h4 {
-  font-family: "Poiret One", cursive;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 1.5em;
   font-style: normal;
 }
 
 p {
-  font-family: "Poiret One", cursive;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 1.3em;
 }
 
+a:hover {
+  color: #ff7f11;
+  cursor: pointer;
+}
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
@@ -48,14 +56,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1% 0 1% 0;
-  font-family: "Poiret One", cursive;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 1.5em;
   a {
     margin-right: 5%;
-  }
-  a:hover {
-    cursor: pointer;
-    color: #ff7f11;
   }
 }
 
@@ -83,13 +87,13 @@ nav {
   opacity: 80%;
 }
 .name {
-  font-family: "Caveat Brush", cursive;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   margin-left: 2%;
 }
 
 .name:hover {
-  color: #ff7f11;
   cursor: pointer;
+  color: #ff7f11;
 }
 
 .main {
@@ -98,32 +102,34 @@ nav {
   justify-content: center;
   align-items: center;
   grid-area: main;
-  border: 1px solid rgb(236, 231, 229);
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
   margin-bottom: 5%;
   margin-top: 5%;
-  text-align: center;
+  a {
+    color: #ff7f11;
+  }
 }
 
 .header-button {
-  background-color: #ff7f11;
-  color: white;
+  width: 10em;
+  background-color: transparent;
+  color: #ff7f11;
   border-radius: 5px;
-  font-family: "Arima Madurai", cursive;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 3em;
-  margin-top: 15%;
+  margin-top: 5%;
   padding: 1% 4% 1% 4%;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   border: none;
+  white-space: nowrap;
 }
 
 .header-button:before {
@@ -151,13 +157,12 @@ nav {
 }
 
 .about {
-  border-top: 1px solid rgb(236, 231, 229);
   padding: 1%;
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-bottom: 10%;
-  margin-top: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
   h2 {
     margin-top: 5%;
   }
@@ -167,14 +172,20 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: right;
+  text-align: left;
   align-items: center;
   margin-right: 5%;
 }
+.pfpWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .pfp {
-  width: 30%;
-  height: auto;
-  margin: 10%;
+  display: block;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 5%;
 }
 
 .aboutIcons {
@@ -212,89 +223,7 @@ nav {
   cursor: pointer;
 }
 
-.process {
-  border-top: 1px solid rgb(236, 231, 229);
-  padding-bottom: 10%;
-  h2 {
-    margin-top: 5%;
-    margin-left: 10%;
-  }
-}
-
-.processContent {
-  margin: 5%;
-  justify-content: space-between;
-
-  p {
-    width: 70%;
-  }
-}
-.tools {
-  border-top: 1px solid rgb(236, 231, 229);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h2 {
-    margin-top: 5%;
-  }
-}
-
-.leftSteps {
-  text-align: left;
-  display: flex;
-  align-items: center;
-  width: 80%;
-  margin-bottom: 5%;
-}
-.rightSteps {
-  float: right;
-  text-align: right;
-  align-items: center;
-  width: 80%;
-  margin-bottom: 5%;
-  .processIcons {
-    float: left;
-    margin-right: auto;
-  }
-  P {
-    float: right;
-    margin-left: auto;
-  }
-}
-.processIcons {
-  display: flex;
-  align-items: center;
-  fill: rgb(236, 231, 229);
-  width: 4em;
-}
-.toolsContent {
-  margin: 5%;
-  margin-left: -10%;
-}
-
-.toolHeaderWrappers {
-  width: 10em;
-  margin-right: 5%;
-}
-
-.toolHeaders {
-  font-size: 1.8em;
-  text-align: right;
-}
-
-.toolIcons {
-  width: 4.5em;
-  height: 4.5em;
-  margin-right: 25%;
-}
-
-.toolRows {
-  align-items: center;
-}
-
 .work {
-  border-top: 1px solid rgb(236, 231, 229);
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -306,17 +235,11 @@ nav {
 
 .workContent {
   margin: 5%;
-  p {
-    font-size: 35px;
-    margin-top: 2%;
-    width: auto;
-  }
-  p:hover {
+  h4:hover {
     cursor: pointer;
   }
   a {
     color: white;
-    font-family: "Poiret One", cursive;
     text-decoration: none;
   }
 }
@@ -341,12 +264,7 @@ form {
   }
 }
 
-.long {
-  border-top: 1px solid rgb(236, 231, 229);
-  border-bottom: 1px solid rgb(236, 231, 229);
-}
 .contact {
-  border-top: 1px solid rgb(236, 231, 229);
   width: 100%;
   text-align: left;
   display: flex;
@@ -361,9 +279,6 @@ form {
 
 .contactContent {
   margin: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .contact-info {
@@ -401,119 +316,6 @@ form {
 
 .socialIcons:hover {
   fill: #ff7f11;
-}
-
-label {
-  color: rgb(236, 231, 229);
-  margin-top: 10%;
-  text-align: left;
-  width: 100%;
-}
-
-input[type="text"] {
-  background-color: transparent;
-  color: white;
-  border-bottom: 2px solid rgb(236, 231, 229);
-}
-
-input[type="text"]:focus {
-  outline: none;
-
-  border-bottom: 2px solid #ff7f11;
-}
-
-input[type="email"] {
-  background-color: transparent;
-  color: white;
-  border-bottom: 2px solid rgb(236, 231, 229);
-}
-
-input[type="email"]:focus {
-  border-bottom: 2px solid #ff7f11;
-}
-
-input {
-  border: none;
-
-  border-bottom: 2px solid rgb(236, 231, 229);
-  background: transparent;
-  width: 40em;
-  height: 3em;
-  border-radius: 5px;
-  padding: 2%;
-}
-
-input:focus {
-  border-bottom: 2px solid #ff7f11;
-  outline: none;
-}
-
-input:valid {
-  border-bottom: 2px solid #ff7f11;
-}
-
-textarea {
-  border: none;
-  color: white;
-  border-bottom: 2px solid rgb(236, 231, 229);
-  background: transparent;
-  width: 40em;
-  height: 5em;
-}
-
-textarea:focus {
-  border-bottom: 2px solid #ff7f11;
-}
-
-textarea:valid {
-  border-bottom: 2px solid #ff7f11;
-}
-
-.contactFormSubmit {
-  margin-top: 10%;
-  color: whitesmoke;
-  background-color: #ff7f11;
-  font-size: 25px;
-  width: 150px;
-  border: none;
-  border-radius: 5px;
-  padding: 2%;
-  font-family: "Arima Madurai", cursive;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-}
-
-.contactFormSubmit:before {
-  content: "";
-  position: absolute;
-  border: #ff7f11 solid 4px;
-  border-radius: 5px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: top, right, bottom, left;
-  transition-property: top, right, bottom, left;
-}
-
-.contactFormSubmit:hover:before,
-.contactFormSubmit:focus:before,
-.contactFormSubmit:active:before {
-  top: -8px;
-  right: -8px;
-  bottom: -8px;
-  left: -8px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer {
@@ -566,19 +368,18 @@ form {
 }
 
 @media only screen and (max-width: $lg) {
+  .aboutContent {
+    font-size: 0.8em;
+  }
   .contact-info {
     p {
       font-size: 1.8em;
       width: 80%;
     }
   }
-
-  input {
-    width: 25em;
-  }
-
-  textarea {
-    width: 25em;
+  .pfp {
+    max-width: 400px;
+    max-height: 400px;
   }
   .siteMock {
     width: 20em;
@@ -597,36 +398,10 @@ form {
     width: 90%;
     text-align: center;
   }
-  .pfp {
-    width: 60%;
-  }
   .contact-info {
     p {
       width: 80%;
     }
-  }
-  .main {
-    border: none;
-  }
-
-  .about {
-    border: none;
-  }
-
-  .process {
-    border: none;
-  }
-
-  .tools {
-    border: none;
-  }
-
-  .work {
-    border: none;
-  }
-
-  .contact {
-    border: none;
   }
 }
 
@@ -649,22 +424,14 @@ form {
   .contact-info {
     padding-bottom: 10%;
   }
-
-  input {
-    width: 30em;
-  }
-
-  textarea {
-    width: 30em;
-  }
 }
 @media only screen and (max-width: $xs) {
   .header {
     h1 {
-      font-size: 2.8em;
+      font-size: 3.5em;
     }
     h2 {
-      font-size: 1em;
+      font-size: 2em;
     }
     h3 {
       font-size: 1.5em;
@@ -690,69 +457,13 @@ form {
   .aboutIcons {
     width: 80%;
   }
-  .processContent {
-    p {
-      width: 80%;
-    }
-  }
-  .leftSteps {
-    width: 100%;
-    margin-bottom: 15%;
-  }
-  .rightSteps {
-    width: 100%;
-    margin-bottom: 15%;
-  }
   .aboutContent {
     margin-right: 0;
-  }
-  .processIcons {
-    width: 3em;
-  }
-
-  .toolsContent {
-    width: 100%;
-    margin: unset;
-    padding-bottom: 10%;
-  }
-  .toolRows {
-    width: 100%;
-    margin-top: 5%;
-  }
-  .toolHeaderWrappers {
-    width: 100%;
-    text-align: center;
-  }
-  .toolHeaders {
-    text-align: center;
-    margin-bottom: 5%;
-  }
-  .toolIconWrapper {
-    justify-content: center;
-    align-items: center;
-  }
-  .toolIcons {
-    width: 3.5em;
-    height: 3.5em;
-    margin-right: 10%;
-    margin-left: 10%;
   }
 
   .contact-info {
     p {
       width: 100%;
     }
-  }
-  input {
-    width: 25em;
-  }
-  textarea {
-    width: 25em;
-  }
-}
-
-@media only screen and (max-width: $xxs) {
-  input {
-    width: 20em;
   }
 }

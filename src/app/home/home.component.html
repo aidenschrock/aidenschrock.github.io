@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div fxHide.lt-md class="top">
     <div id="top" class="topContent">
-      <h4 (click)="onClick('main')" class="name">Aiden Schrock</h4>
+      <h4 (click)="onClick('main')" class="name">AS</h4>
 
       <nav>
         <a (click)="onClick('main')">Home </a>
@@ -16,13 +16,14 @@
   </div>
   <div id="main" class="main">
     <section #header class="header">
-      <h1>
-        Web Design & <br />
-        Development
-      </h1>
-      <h3>
-        Communicate the soul of your business through personable web design
-      </h3>
+      <h1>Aiden Schrock</h1>
+      <h2>Web Developer & Designer</h2>
+      <h4>
+        I'm a junior software developer who is gaining experience in creating
+        digital experiences. Currently, I'm fleshing out an XR analytics
+        application at
+        <a target="_blank" href="https://recolude.com">Recolude</a>.
+      </h4>
       <button (click)="onClick('contact')" class="header-button">
         Let's Talk!
       </button>
@@ -34,17 +35,21 @@
       class="about"
       #about
     >
-      <img
-        alt="Headshot of Aiden Schrock"
-        class="pfp"
-        src="../../assets/pfp.png"
-      />
       <div #about class="aboutContent">
         <h2>About</h2>
         <p>
-          I’m Aiden, a web developer from the Southern United States. I have a
-          passion for the passionate. I love helping small businesses and
-          startups translate the core of their brand into a unique web design.
+          I’m Aiden, a web developer who is currently located in Austin, TX. I
+          started dabbling with code in my first years of college (i.e. a
+          mat-lab class and building a "choose your own adventure" HTML game for
+          an English project). I found it fun, but didn't consider it as a
+          potential career until I made friends with software engineers. I was
+          quickly drawn in by the freedom and independent work lives that they
+          were living. The Odin Project kicked off my learning and then I was
+          thrown into the deep end of startup life, where I've learned most of
+          what I know.
+        </p>
+        <br />
+        <p>
           I’m also a fan of flavored lattes, PC gaming, discovering new music,
           and podcasts!
         </p>
@@ -104,286 +109,14 @@
           </a>
         </div>
       </div>
-    </section>
-    <section class="process">
-      <h2>Process</h2>
-      <div class="processContent">
-        <div class="leftSteps">
-          <div class="titleDescription">
-            <h4>01. Interview/Research</h4>
-            <p>
-              This is where I learn all about who you are and what your brand
-              stands for! We’ll discuss your goals for the site, your customer
-              base, and your likes/dislikes. During this phase, I will also
-              research competitors to make sure you stand out in the crowd.
-            </p>
-          </div>
-          <div>
-            <svg
-              alt="Interview Mic"
-              class="processIcons"
-              xmlns="http://www.w3.org/2000/svg"
-              data-name="Layer 1"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M23.78,5.51a5.42,5.42,0,1,0-10.43,2.8l-1.62,3-.24.42h0L7.72,18.58a1.6,1.6,0,0,0,.5,2.13l.13.08-.65.49-.18.13c-.54.4-.9.64-1.38.57a1.32,1.32,0,0,1-1-.94,9.3,9.3,0,0,1-.36-3V18A2.32,2.32,0,0,0,4,16.13a2.58,2.58,0,0,0-2.14-.27,4.13,4.13,0,0,1-.75.09c0-.07-.15-.52.84-2.73a.5.5,0,1,0-.91-.41C.11,15-.08,16,.36,16.55s1.1.4,1.71.3,1.06-.18,1.34.05A1.56,1.56,0,0,1,3.74,18v.12a10,10,0,0,0,.42,3.29A2.27,2.27,0,0,0,6,23l.3,0a3,3,0,0,0,1.81-.78l.17-.13c.32-.23.62-.47.93-.71l0,0A1.62,1.62,0,0,0,11.4,21l4.9-6.14.32-.39,2.1-2.63a5.44,5.44,0,0,0,4.14-2.21A5.5,5.5,0,0,0,23.78,5.51ZM10.61,20.43a.58.58,0,0,1-.8.13l-1-.69a.6.6,0,0,1-.18-.8l3.56-6.5a11.1,11.1,0,0,0,1.46,1.16,11.9,11.9,0,0,0,1.64.9Zm5.29-6.61a10,10,0,0,1-1.73-.92,9.69,9.69,0,0,1-1.51-1.24L14,9.26a7.93,7.93,0,0,0,3.63,2.43Zm6.26-4.9a1.62,1.62,0,0,1-.11.17,4.45,4.45,0,0,1-3.52,1.81,6.86,6.86,0,0,1-4.19-2.79s0,0,0,0A4.45,4.45,0,0,1,14.76,4h0a9,9,0,0,0,3.12,3.34,9,9,0,0,0,4.28,1.59Zm.47-1h0a7.46,7.46,0,0,1-4.19-1.44A7.46,7.46,0,0,1,15.5,3.15h0a4.45,4.45,0,0,1,5.43-.39,4.39,4.39,0,0,1,1.86,2.94A4.49,4.49,0,0,1,22.63,7.94Z"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="rightSteps">
-          <div class="titleDescription">
-            <h4>02. Sitemap & Wireframe</h4>
-            <p>
-              I create a sitemap that will determine the website’s navigation
-              and hierarchy. Then, I create a wireframe of the potiential layout
-              of your site in Figma.
-            </p>
-          </div>
-          <div>
-            <svg
-              alt="Sitemap"
-              class="processIcons"
-              xmlns="http://www.w3.org/2000/svg"
-              data-name="Layer 15"
-              viewBox="0 0 48 48"
-            >
-              <path
-                d="M43,2H5A3,3,0,0,0,2,5V43a3,3,0,0,0,3,3H43a3,3,0,0,0,3-3V5A3,3,0,0,0,43,2ZM5,4H43a1,1,0,0,1,1,1V8H4V5A1,1,0,0,1,5,4ZM43,44H5a1,1,0,0,1-1-1V10H44V43A1,1,0,0,1,43,44Z"
-              />
-              <rect width="2" height="2" x="6" y="5" />
-              <rect width="2" height="2" x="10" y="5" />
-              <rect width="2" height="2" x="14" y="5" />
-              <path
-                d="M15 26H9a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V27A1 1 0 0 0 15 26zm-1 6H10V28h4v4zM27 26H21a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V27A1 1 0 0 0 27 26zm-1 6H22V28h4v4zM39 26H33a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V27A1 1 0 0 0 39 26zm-1 6H34V28h4v4zM39 13H9a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1H39a1 1 0 0 0 1-1V14A1 1 0 0 0 39 13zm-1 8H10V15H38v6z"
-              />
-              <rect width="8" height="2" x="8" y="36" />
-              <rect width="8" height="2" x="8" y="39" />
-              <rect width="8" height="2" x="20" y="36" />
-              <rect width="8" height="2" x="20" y="39" />
-              <rect width="8" height="2" x="32" y="36" />
-              <rect width="8" height="2" x="32" y="39" />
-            </svg>
-          </div>
-        </div>
-        <div class="leftSteps">
-          <div class="titleDescription">
-            <h4>03. Design</h4>
-            <p>
-              After the wireframe is approved, I will begin filling it in with
-              the design! I may use other tools, such as After Effects & Blender
-              at this point to create custom artwork and animations.
-            </p>
-          </div>
-          <div>
-            <svg
-              alt="Design Tools"
-              class="processIcons"
-              xmlns="http://www.w3.org/2000/svg"
-              id="Layer_1"
-              x="0"
-              y="0"
-              enable-background="new 0 0 20 20"
-              version="1.1"
-              viewBox="0 0 20 20"
-              xml:space="preserve"
-            >
-              <path
-                id="XMLID_345_"
-                fill="none"
-                stroke="#FFFFFF"
-                stroke-miterlimit="10"
-                d="M6.9,10L2.1,5.3c-0.2-0.2-0.2-0.5,0-0.7l2.4-2.4C4.7,2,5,2,5.2,2.2l4.7,4.7"
-              />
-              <path
-                id="XMLID_342_"
-                fill="none"
-                stroke="#FFFFFF"
-                stroke-miterlimit="10"
-                d="M13,10l4.8,4.8c0.2,0.2,0.2,0.5,0,0.7l-2.4,2.4c-0.2,0.2-0.5,0.2-0.7,0L10,13.1"
-              />
-              <rect
-                id="XMLID_380_"
-                width="1.4"
-                height="2.9"
-                x="13.8"
-                y="14.2"
-                transform="rotate(-134.999 14.563 15.678)"
-              />
-              <rect
-                id="XMLID_378_"
-                width="1.4"
-                height="1.5"
-                x="11.3"
-                y="13.4"
-                transform="rotate(-134.999 12.015 14.136)"
-              />
-              <rect
-                id="XMLID_375_"
-                width="1.4"
-                height="2.9"
-                x="5.7"
-                y="6.1"
-                transform="rotate(-134.999 6.382 7.497)"
-              />
-              <rect
-                id="XMLID_374_"
-                width="1.4"
-                height="1.5"
-                x="3.1"
-                y="5.2"
-                transform="rotate(-134.999 3.834 5.956)"
-              />
-              <path
-                id="XMLID_341_"
-                fill="none"
-                stroke="#FFFFFF"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
-                d="M14,2.9l0.6-0.6c0.4-0.4,1-0.4,1.4,0l1.7,1.7c0.4,0.4,0.4,1,0,1.4L17.1,6"
-              />
-              <rect
-                id="XMLID_371_"
-                width="4.3"
-                height="13.5"
-                x="7.8"
-                y="3.3"
-                fill="none"
-                stroke="#FFFFFF"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
-                transform="rotate(45.001 9.921 10.082)"
-              />
-              <rect
-                id="XMLID_370_"
-                width="13.8"
-                height="1.4"
-                x="2.9"
-                y="9.4"
-                transform="rotate(-45.001 9.867 10.137)"
-              />
-              <polygon
-                id="XMLID_369_"
-                fill="none"
-                stroke="#FFFFFF"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
-                points="2.1 17.9 3.6 13.3 6.7 16.4"
-              />
-              <polygon id="XMLID_368_" points="2.6 16.4 2.1 17.9 3.6 17.4" />
-              <polyline
-                id="XMLID_340_"
-                fill="none"
-                stroke="#FFFFFF"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
-                points="17.3 5.8 16.1 6.9 13.1 3.9 14.2 2.7"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="rightSteps">
-          <div class="titleDescription">
-            <h4>04. Development</h4>
-            <p>
-              The final step is to bring the website to life! Depending on your
-              needs, this can be done in a website builder, such as WIX, or with
-              code.
-            </p>
-          </div>
-          <div>
-            <svg
-              alt="Website Coding"
-              class="processIcons"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 48 48"
-            >
-              <g data-name="website coding and gear">
-                <circle cx="5" cy="4" r="1" />
-                <circle cx="9" cy="4" r="1" />
-                <circle cx="13" cy="4" r="1" />
-                <path
-                  d="M47,35H45.42a.61.61,0,0,1-.05-.12l1.12-1.12a1,1,0,0,0,.29-.71,1.05,1.05,0,0,0-.29-.71L44,29.86V4a4,4,0,0,0-4-4H4A4,4,0,0,0,0,4V39a1,1,0,0,0,1,1H28a1,1,0,0,0,1,1h1.58a.61.61,0,0,1,.05.12l-1.12,1.12a1,1,0,0,0-.29.71,1.05,1.05,0,0,0,.29.71l2.83,2.83a1,1,0,0,0,1.42,0l1.12-1.12.12.05V47a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V45.42l.12-.05,1.12,1.12a1,1,0,0,0,.71.29,1.05,1.05,0,0,0,.71-.29l2.83-2.83a1.05,1.05,0,0,0,.29-.71,1,1,0,0,0-.29-.71l-1.12-1.12a.61.61,0,0,1,.05-.12H47a1,1,0,0,0,1-1V36A1,1,0,0,0,47,35ZM2,4A2,2,0,0,1,4,2H40a2,2,0,0,1,2,2V6H2ZM2,38V8H42V29.76l-.88.87L41,30.58V29a1,1,0,0,0-1-1H36a1,1,0,0,0-1,1v1.58l-.12.05-1.12-1.12a1,1,0,0,0-.71-.29,1.05,1.05,0,0,0-.71.29l-2.83,2.83a1.05,1.05,0,0,0-.29.71,1,1,0,0,0,.29.71l1.12,1.12a.61.61,0,0,1-.05.12H29a1,1,0,0,0-1,1v2Zm44,1H44.71a1,1,0,0,0-1,.71,5.8,5.8,0,0,1-.47,1.14A1,1,0,0,0,43.45,42l.91.91L43,44.36,42,43.45a1,1,0,0,0-1.19-.17,5.8,5.8,0,0,1-1.14.47,1,1,0,0,0-.71,1V46H37V44.71a1,1,0,0,0-.71-1,5.8,5.8,0,0,1-1.14-.47,1,1,0,0,0-1.19.17l-.91.91L31.64,43l.91-.91a1,1,0,0,0,.17-1.19,5.8,5.8,0,0,1-.47-1.14,1,1,0,0,0-1-.71H30V37h1.29a1,1,0,0,0,1-.71,5.8,5.8,0,0,1,.47-1.14A1,1,0,0,0,32.55,34l-.91-.91,1.41-1.41.91.91a1,1,0,0,0,1.19.17,5.8,5.8,0,0,1,1.14-.47,1,1,0,0,0,.71-1V30h2v1.29a1,1,0,0,0,.71,1,5.8,5.8,0,0,1,1.14.47A1,1,0,0,0,42,32.55l.91-.91,1.41,1.41-.91.91a1,1,0,0,0-.17,1.19,5.8,5.8,0,0,1,.47,1.14,1,1,0,0,0,1,.71H46Z"
-                />
-                <path
-                  d="M38 34a4 4 0 1 0 4 4A4 4 0 0 0 38 34zm0 6a2 2 0 1 1 2-2A2 2 0 0 1 38 40zM17.71 18.29a1 1 0 0 0-1.42 0l-4 4a1 1 0 0 0 0 1.42l4 4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42L14.41 23l3.3-3.29A1 1 0 0 0 17.71 18.29zM31.71 22.29l-4-4a1 1 0 0 0-1.42 1.42L29.59 23l-3.3 3.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4-4A1 1 0 0 0 31.71 22.29zM23.2 17A1 1 0 0 0 22 17.8l-2 10A1 1 0 0 0 20.8 29l.2 0a1 1 0 0 0 1-.8l2-10A1 1 0 0 0 23.2 17z"
-                />
-              </g>
-            </svg>
-          </div>
-        </div>
+      <div class="pfpWrapper">
+        <img
+          alt="Headshot of Aiden Schrock"
+          class="pfp"
+          src="../../assets/pfp.png"
+        />
       </div>
     </section>
-    <div class="tools">
-      <h2>Tools</h2>
-      <div fxLayoutGap="25px" fxLayout="column" class="toolsContent">
-        <div
-          class="toolRows"
-          fxLayout="row"
-          fxLayout.lt-md="column"
-          fxLayoutAlign.lt-md="center center"
-        >
-          <div class="toolHeaderWrappers">
-            <h4 class="toolHeaders">Design</h4>
-          </div>
-          <div class="toolIconWrapper" fxLayout="row">
-            <img
-              alt="Adobe Creative Suite"
-              class="toolIcons"
-              src="../../assets/adobe.svg"
-              matTooltip="Adobe Creative Suite"
-            />
-            <img
-              alt="Blender"
-              matTooltip="Blender"
-              class="toolIcons"
-              src="../../assets/blender.svg"
-            />
-            <img
-              alt="Figma"
-              matTooltip="Figma"
-              class="toolIcons"
-              src="../../assets/figma.svg"
-            />
-          </div>
-        </div>
-        <div
-          class="toolRows"
-          fxLayout="row"
-          fxLayout.lt-md="column"
-          fxLayoutAlign.lt-md="center center"
-        >
-          <div class="toolHeaderWrappers">
-            <h4 class="toolHeaders">Development</h4>
-          </div>
-          <div class="toolIconWrapper" fxLayout="row">
-            <img
-              alt="Amazon Web Services"
-              matTooltip="Amazon Web Services"
-              class="toolIcons"
-              src="../../assets/aws.svg"
-            />
-            <img
-              alt="Angular"
-              matTooltip="Angular"
-              class="toolIcons"
-              src="../../assets/angular.svg"
-            />
-            <img
-              alt="WIX Website Builder"
-              matTooltip="WIX"
-              class="toolIcons"
-              src="../../assets/wix.svg"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
     <div #work fxLayout="column" id="work" class="work">
       <h2>Work</h2>
       <div
@@ -399,7 +132,7 @@
             class="siteMock"
             src="../../assets/RecoludeMock.png"
           />
-          <p>RECOLUDE</p>
+          <h4>RECOLUDE</h4>
         </div>
         <div fxLayout="column">
           <a
@@ -411,7 +144,7 @@
               class="siteMock"
               src="../../assets/AllrecipesMock.png"
             />
-            <p>Allrecipes-Product Redesign</p>
+            <h4>Allrecipes-Product Redesign</h4>
           </a>
         </div>
       </div>
@@ -422,7 +155,7 @@
         <div class="contact-info">
           <p>
             If you’re interested in working with me, please reach out to me
-            through this form or any of my socials!
+            through any of my socials!
           </p>
           <div class="socials">
             <a target="_blank" href="https://github.com/aidenschrock">
@@ -492,25 +225,6 @@
               </svg>
             </a>
           </div>
-        </div>
-        <div>
-          <form
-            [formGroup]="contactForm"
-            class="contact-form"
-            (ngSubmit)="onSubmit(contactForm.value)"
-          >
-            <label>Name</label>
-            <input type="text" formControlName="Fullname" required />
-            <label>Email</label>
-            <input type="email" formControlName="Email" required />
-            <label>Message</label>
-            <textarea
-              class="message-field"
-              formControlName="Comment"
-              required
-            ></textarea>
-            <button class="contactFormSubmit" type="submit">Send</button>
-          </form>
         </div>
       </div>
     </section>
