@@ -14,224 +14,222 @@
       </nav>
     </div>
   </div>
-  <div id="main" class="main">
-    <section #header class="header">
-      <h1>Aiden Schrock</h1>
-      <h2>Web Developer & Designer</h2>
-      <h4>
-        I'm a junior software developer who is gaining experience in creating
-        digital experiences. Currently, I'm fleshing out an XR analytics
-        application at
-        <a target="_blank" href="https://recolude.com">Recolude</a>.
-      </h4>
-      <button (click)="onClick('contact')" class="header-button">
-        Let's Talk!
-      </button>
-    </section>
-    <section
-      fxLayout.lt-md="column"
-      fxLayoutAlign.lt-md="center center"
-      id="about"
-      class="about"
-      #about
-    >
-      <div #about class="aboutContent">
-        <h2>About</h2>
-        <p>
-          I’m Aiden, a web developer who is currently located in Austin, TX. I
-          started dabbling with code in my first years of college (i.e. a
-          mat-lab class and building a "choose your own adventure" HTML game for
-          an English project). I found it fun, but didn't consider it as a
-          potential career until I made friends with software engineers. I was
-          quickly drawn in by the freedom and independent work lives that they
-          were living. The Odin Project kicked off my learning and then I was
-          thrown into the deep end of startup life, where I've learned most of
-          what I know.
-        </p>
-        <br />
-        <p>
-          I’m also a fan of flavored lattes, PC gaming, discovering new music,
-          and podcasts!
-        </p>
-        <div fxLayoutGap="15%" class="aboutIcons">
-          <a
-            target="_blank"
-            href="https://www.starbucks.com/menu/product/420/hot?parent=%2Fdrinks%2Fhot-coffees%2Fmochas"
-          >
-            <svg
-              alt="My Favorite Coffee"
-              matTooltip="White Chocolate Mocha"
-              fill="#ece7e5"
-              class="coffeeIcon"
-              xmlns="http://www.w3.org/2000/svg"
-              data-name="Layer 1"
-              viewBox="0 0 128 128"
-            >
-              <path
-                d="M59.978 19.112c1.43158 1.9248 2.78308 3.74268 2.996 5.95215.332 3.43457-2.38464 6.66992-3.22546 7.57959a1.99991 1.99991 0 1 0 2.93738 2.71484c1.4433-1.56152 4.74786-5.72852 4.27039-10.6792-.32129-3.31738-2.15228-5.78125-3.76843-7.95459-.29883-.40137-.59375-.79688-.872-1.19141A8.05469 8.05469 0 0 1 61.184 9.27948a8.59586 8.59586 0 0 1 3.47937-5.59473A2.00025 2.00025 0 0 0 62.50323.31757a12.65566 12.65566 0 0 0-5.24487 8.19482 12.00125 12.00125 0 0 0 1.79 9.32813C59.34619 18.26141 59.65961 18.68378 59.978 19.112zM47.97845 19.112c1.43158 1.9248 2.78308 3.74268 2.996 5.95215.332 3.43457-2.38464 6.66992-3.22546 7.57959a1.99944 1.99944 0 0 0 .11133 2.82617 2.02236 2.02236 0 0 0 2.826-.11133c1.4433-1.56152 4.74786-5.72852 4.27032-10.6792-.32123-3.31738-2.15222-5.78125-3.76837-7.95459-.29883-.40137-.59375-.79688-.872-1.19141a8.05469 8.05469 0 0 1-1.13184-6.25391 8.59586 8.59586 0 0 1 3.47937-5.59473A2.00025 2.00025 0 0 0 50.50372.31757a12.65566 12.65566 0 0 0-5.24487 8.19482 12.00125 12.00125 0 0 0 1.79 9.32813C47.34668 18.26141 47.6601 18.68378 47.97845 19.112zM71.97748 19.112c1.43158 1.9248 2.78308 3.74268 2.996 5.95215.332 3.43457-2.38464 6.66992-3.22546 7.57959a1.99942 1.99942 0 0 0 .11127 2.82611 2.03721 2.03721 0 0 0 2.82611-.11127c1.4433-1.56152 4.74786-5.72852 4.27039-10.6792-.32129-3.31738-2.15228-5.78125-3.76843-7.95459-.29883-.40137-.59375-.79688-.872-1.19141a8.05469 8.05469 0 0 1-1.13184-6.25391 8.59586 8.59586 0 0 1 3.47937-5.59473 2.00023 2.00023 0 0 0-2.16-3.36719 12.65573 12.65573 0 0 0-5.24493 8.19482 12.00125 12.00125 0 0 0 1.79 9.32813C71.3457 18.26141 71.65912 18.68378 71.97748 19.112zM9.897 118.06592C12.02 120.396 19.28918 128 23.68646 128h76.63165c4.39728 0 11.66657-7.604 13.78949-9.93408a2.00557 2.00557 0 0 0 .31641-.46484 5.68844 5.68844 0 0 0-.25684-5.47607A4.26587 4.26587 0 0 0 110.52771 110H90.64948l2.07916-4H33.27576l2.079 4H13.47693a4.266 4.266 0 0 0-3.63953 2.125 5.68844 5.68844 0 0 0-.25677 5.47607A2.00343 2.00343 0 0 0 9.897 118.06592zM13.47693 114h97.05078c.03809 0 .1416.07617.24408.23975a1.73713 1.73713 0 0 1 .14844 1.3833c-3.77814 4.09277-8.86292 8.377-10.60211 8.377H23.68646c-1.7392 0-6.82391-4.28418-10.60211-8.377C12.993 115.33844 12.93951 114 13.47693 114zM31.2 102H94.81l3.71-7.14A57.81573 57.81573 0 0 0 105 68.31V64h8.03A2.137 2.137 0 0 1 115 66.27V75.8a3.75009 3.75009 0 0 1-1.05 2.65l-4.33 4.1a2.00174 2.00174 0 0 0 2.76 2.9l4.35-4.13A7.7986 7.7986 0 0 0 119 75.8V66.27A6.13193 6.13193 0 0 0 113.03 60H105V56H75a2 2 0 0 1 0-4h30V47.8A7.78024 7.78024 0 0 0 97.25 40H28.75A7.78668 7.78668 0 0 0 21 47.8V68.31a57.94107 57.94107 0 0 0 6.48 26.55zM35 59.5a2.00587 2.00587 0 0 1 2-2 1.95522 1.95522 0 0 1 1.41.59 1.40982 1.40982 0 0 1 .25.29A1.97336 1.97336 0 0 1 39 59.5v14c0 .96.12 2.81.27 4.11q.045.345.09.63a3.35375 3.35375 0 0 0 .13.63l2.83 6.31a3.31888 3.31888 0 0 1 .14.41 1.99912 1.99912 0 0 1-3.78 1.23l-2.86-6.37c-.72-1.69-.82-6.9-.82-6.95z"
-              />
-            </svg>
-          </a>
-          <a
-            target="_blank"
-            href="https://open.spotify.com/track/3Ddgh4ZwVIkLx0f4WeDFmo?si=823d51e699c6419c"
-          >
-            <svg
-              alt="My Favorite Song"
-              matTooltip="sugar honey ice & tea by BMTH"
-              fill="#ece7e5"
-              class="musicIcon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 60 60"
-            >
-              <path
-                d="M59.244.435c.48.38.756.956.756 1.564v38.668c0 6.248-5.034 11.332-11.224 11.332-6.188 0-11.222-5.084-11.222-11.332 0-6.25 5.034-11.334 11.222-11.334 2.75 0 5.27 1.008 7.224 2.672v-17.49l-33.554 7.742v26.41c0 6.248-5.034 11.332-11.222 11.332C5.034 59.999 0 54.915 0 48.667c0-6.25 5.034-11.334 11.224-11.334 2.75 0 5.268 1.008 7.222 2.672v-29.34c0-.93.644-1.738 1.55-1.948L57.552.05a1.995 1.995 0 0 1 1.692.384zm-48.02 55.564c3.982 0 7.222-3.29 7.222-7.332 0-4.044-3.24-7.334-7.222-7.334C7.24 41.333 4 44.623 4 48.667c0 4.042 3.24 7.332 7.224 7.332zM22.446 18.15L56 10.409V4.513l-33.554 7.744v5.894zm26.33 29.848c3.984 0 7.224-3.29 7.224-7.332 0-4.044-3.24-7.334-7.224-7.334-3.982 0-7.222 3.29-7.222 7.334 0 4.042 3.24 7.332 7.222 7.332z"
-              />
-            </svg>
-          </a>
-          <a target="_blank" href="https://playoverwatch.com/en-us/">
-            <svg
-              alt="My Favorite Game"
-              matTooltip="Overwatch"
-              fill="#ece7e5"
-              class="pcIcon"
-              xmlns="http://www.w3.org/2000/svg"
-              data-name="Layer 1"
-              viewBox="0 0 128 128"
-            >
-              <path
-                d="M4.00061 30V70a6.00656 6.00656 0 0 0 6 6H36.00049v4h-4a2 2 0 0 0 0 4H58.00037a2 2 0 1 0 0-4h-4V76H80.00024a6.00651 6.00651 0 0 0 5.99994-6V30a6.00651 6.00651 0 0 0-5.99994-6H10.00061A6.00656 6.00656 0 0 0 4.00061 30zM50.00043 80H40.00049V76h9.99994zM82.00024 30V70a2.00229 2.00229 0 0 1-2 2H10.00061a2.00229 2.00229 0 0 1-2-2V30a2.00229 2.00229 0 0 1 2-2H80.00024A2.00229 2.00229 0 0 1 82.00024 30zM122 24H98.00012a6.00655 6.00655 0 0 0-5.99994 6V94a6.00655 6.00655 0 0 0 5.99994 6H122a6.00656 6.00656 0 0 0 6-6V30A6.00656 6.00656 0 0 0 122 24zm2 70a2.00229 2.00229 0 0 1-2 2H98.00012a2.00228 2.00228 0 0 1-1.99994-2V68H124zm0-30H96.00018V60H124zm0-8H96.00018V30a2.00228 2.00228 0 0 1 1.99994-2H122a2.00229 2.00229 0 0 1 2 2z"
-              />
-              <path
-                d="M117.00006 36H103.00012a2 2 0 0 0 0 4h13.99994a2 2 0 1 0 0-4zM117.00006 44H103.00012a2 2 0 0 0 0 4h13.99994a2 2 0 1 0 0-4zM106.00012 88h7.99994a2.0001 2.0001 0 0 0 2-2V78a2.0001 2.0001 0 0 0-2-2h-7.99994a2.0001 2.0001 0 0 0-2 2v8A2.0001 2.0001 0 0 0 106.00012 88zm2-8h3.99994v4h-3.99994zM.5827 102.05957A4.04121 4.04121 0 0 0 4.0636 104H85.93726a4.04121 4.04121 0 0 0 3.4809-1.94043 3.9265 3.9265 0 0 0 .13965-3.87012l-4.121-8A4.04839 4.04839 0 0 0 81.81616 88H8.18469a4.04839 4.04839 0 0 0-3.62061 2.18945l-4.121 8A3.9265 3.9265 0 0 0 .5827 102.05957zM8.18469 92l73.69641.02148 4.1225 7.9541C85.99243 100 85.95239 100 85.93726 100l-81.9386.02148zM50.65717 47.17188a2.00011 2.00011 0 0 0 2.829-2.82812l-2.82855-2.8291a2.00013 2.00013 0 0 0-2.8291 2.82813zM39.34326 58.48535a2.00011 2.00011 0 0 0 2.829-2.82812l-2.82855-2.8291a2.00013 2.00013 0 0 0-2.8291 2.82813zM47.829 55.65625a1.99979 1.99979 0 0 0 2.82813-2.82812l-8.48535-8.48437a1.99976 1.99976 0 0 0-2.82806 2.82813z"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="pfpWrapper">
-        <img
-          alt="Headshot of Aiden Schrock"
-          class="pfp"
-          src="../../assets/pfp.png"
-        />
-      </div>
-    </section>
-    <div #work fxLayout="column" id="work" class="work">
-      <h2>Work</h2>
-      <div
+  <div class="mainWrapper">
+    <div id="main" class="main">
+      <section #header class="header">
+        <h1>Aiden Schrock</h1>
+        <h2>Web Developer & Designer</h2>
+        <h4>
+          I'm a junior software developer who is gaining experience in creating
+          digital experiences. Currently, I'm fleshing out an XR analytics
+          application at
+          <a target="_blank" href="https://recolude.com">Recolude</a>.
+        </h4>
+        <button (click)="onClick('contact')" class="header-button">
+          Let's Talk!
+        </button>
+      </section>
+      <section
         fxLayout.lt-md="column"
         fxLayoutAlign.lt-md="center center"
-        fxLayout="row"
-        fxLayoutGap="10%"
-        class="workContent"
+        id="about"
+        class="about"
+        #about
       >
-        <div [routerLink]="['/work']" fxLayout="column">
-          <img
-            alt="Recolude Website Mock"
-            class="siteMock"
-            src="../../assets/RecoludeMock.png"
-          />
-          <h4>RECOLUDE</h4>
-        </div>
-        <div fxLayout="column">
-          <a
-            target="_blank"
-            href="https://medium.com/@aidenschrock/allrecipes-ux-design-study-redesigning-the-most-popular-cooking-site-e04c73ed58a1"
-          >
-            <img
-              alt="Allrecipes Website Mock"
-              class="siteMock"
-              src="../../assets/AllrecipesMock.png"
-            />
-            <h4>Allrecipes-Product Redesign</h4>
-          </a>
-        </div>
-      </div>
-    </div>
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <div #contact fxLayout.lt-md="column" class="contactContent">
-        <div class="contact-info">
+        <div #about class="aboutContent">
+          <h2>About</h2>
           <p>
-            If you’re interested in working with me, please reach out to me
-            through any of my socials!
+            I’m Aiden, a web developer who is currently located in Austin, TX. I
+            started dabbling with code in my first years of college (i.e. a
+            mat-lab class and building a "choose your own adventure" HTML game
+            for an English project). I found it fun, but didn't consider it as a
+            potential career until I made friends with software engineers. I was
+            quickly drawn in by the freedom and independent work lives that they
+            were living. The Odin Project kicked off my learning and then I was
+            thrown into the deep end of startup life, where I've learned most of
+            what I know.
           </p>
-          <div class="socials">
-            <a target="_blank" href="https://github.com/aidenschrock">
+          <br />
+          <p>
+            I’m also a fan of flavored lattes, PC gaming, discovering new music,
+            and podcasts!
+          </p>
+          <div fxLayoutGap="15%" class="aboutIcons">
+            <a
+              target="_blank"
+              href="https://www.starbucks.com/menu/product/420/hot?parent=%2Fdrinks%2Fhot-coffees%2Fmochas"
+            >
               <svg
-                alt="Github"
-                class="socialIcons"
-                id="SvgjsSvg1001"
+                alt="My Favorite Coffee"
+                matTooltip="White Chocolate Mocha"
+                fill="#ece7e5"
+                class="coffeeIcon"
                 xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns:svgjs="http://svgjs.com/svgjs"
+                data-name="Layer 1"
+                viewBox="0 0 128 128"
               >
-                <defs id="SvgjsDefs1002"></defs>
-                <g id="SvgjsG1008" transform="matrix(1,0,0,1,0,0)">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                      class="color000 svgShape"
-                    ></path>
-                  </svg>
-                </g>
+                <path
+                  d="M59.978 19.112c1.43158 1.9248 2.78308 3.74268 2.996 5.95215.332 3.43457-2.38464 6.66992-3.22546 7.57959a1.99991 1.99991 0 1 0 2.93738 2.71484c1.4433-1.56152 4.74786-5.72852 4.27039-10.6792-.32129-3.31738-2.15228-5.78125-3.76843-7.95459-.29883-.40137-.59375-.79688-.872-1.19141A8.05469 8.05469 0 0 1 61.184 9.27948a8.59586 8.59586 0 0 1 3.47937-5.59473A2.00025 2.00025 0 0 0 62.50323.31757a12.65566 12.65566 0 0 0-5.24487 8.19482 12.00125 12.00125 0 0 0 1.79 9.32813C59.34619 18.26141 59.65961 18.68378 59.978 19.112zM47.97845 19.112c1.43158 1.9248 2.78308 3.74268 2.996 5.95215.332 3.43457-2.38464 6.66992-3.22546 7.57959a1.99944 1.99944 0 0 0 .11133 2.82617 2.02236 2.02236 0 0 0 2.826-.11133c1.4433-1.56152 4.74786-5.72852 4.27032-10.6792-.32123-3.31738-2.15222-5.78125-3.76837-7.95459-.29883-.40137-.59375-.79688-.872-1.19141a8.05469 8.05469 0 0 1-1.13184-6.25391 8.59586 8.59586 0 0 1 3.47937-5.59473A2.00025 2.00025 0 0 0 50.50372.31757a12.65566 12.65566 0 0 0-5.24487 8.19482 12.00125 12.00125 0 0 0 1.79 9.32813C47.34668 18.26141 47.6601 18.68378 47.97845 19.112zM71.97748 19.112c1.43158 1.9248 2.78308 3.74268 2.996 5.95215.332 3.43457-2.38464 6.66992-3.22546 7.57959a1.99942 1.99942 0 0 0 .11127 2.82611 2.03721 2.03721 0 0 0 2.82611-.11127c1.4433-1.56152 4.74786-5.72852 4.27039-10.6792-.32129-3.31738-2.15228-5.78125-3.76843-7.95459-.29883-.40137-.59375-.79688-.872-1.19141a8.05469 8.05469 0 0 1-1.13184-6.25391 8.59586 8.59586 0 0 1 3.47937-5.59473 2.00023 2.00023 0 0 0-2.16-3.36719 12.65573 12.65573 0 0 0-5.24493 8.19482 12.00125 12.00125 0 0 0 1.79 9.32813C71.3457 18.26141 71.65912 18.68378 71.97748 19.112zM9.897 118.06592C12.02 120.396 19.28918 128 23.68646 128h76.63165c4.39728 0 11.66657-7.604 13.78949-9.93408a2.00557 2.00557 0 0 0 .31641-.46484 5.68844 5.68844 0 0 0-.25684-5.47607A4.26587 4.26587 0 0 0 110.52771 110H90.64948l2.07916-4H33.27576l2.079 4H13.47693a4.266 4.266 0 0 0-3.63953 2.125 5.68844 5.68844 0 0 0-.25677 5.47607A2.00343 2.00343 0 0 0 9.897 118.06592zM13.47693 114h97.05078c.03809 0 .1416.07617.24408.23975a1.73713 1.73713 0 0 1 .14844 1.3833c-3.77814 4.09277-8.86292 8.377-10.60211 8.377H23.68646c-1.7392 0-6.82391-4.28418-10.60211-8.377C12.993 115.33844 12.93951 114 13.47693 114zM31.2 102H94.81l3.71-7.14A57.81573 57.81573 0 0 0 105 68.31V64h8.03A2.137 2.137 0 0 1 115 66.27V75.8a3.75009 3.75009 0 0 1-1.05 2.65l-4.33 4.1a2.00174 2.00174 0 0 0 2.76 2.9l4.35-4.13A7.7986 7.7986 0 0 0 119 75.8V66.27A6.13193 6.13193 0 0 0 113.03 60H105V56H75a2 2 0 0 1 0-4h30V47.8A7.78024 7.78024 0 0 0 97.25 40H28.75A7.78668 7.78668 0 0 0 21 47.8V68.31a57.94107 57.94107 0 0 0 6.48 26.55zM35 59.5a2.00587 2.00587 0 0 1 2-2 1.95522 1.95522 0 0 1 1.41.59 1.40982 1.40982 0 0 1 .25.29A1.97336 1.97336 0 0 1 39 59.5v14c0 .96.12 2.81.27 4.11q.045.345.09.63a3.35375 3.35375 0 0 0 .13.63l2.83 6.31a3.31888 3.31888 0 0 1 .14.41 1.99912 1.99912 0 0 1-3.78 1.23l-2.86-6.37c-.72-1.69-.82-6.9-.82-6.95z"
+                />
               </svg>
             </a>
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/aiden-schrock/"
+              href="https://open.spotify.com/track/3Ddgh4ZwVIkLx0f4WeDFmo?si=823d51e699c6419c"
             >
               <svg
-                alt="linkedin"
-                class="socialIcons"
-                id="SvgjsSvg1011"
+                alt="My Favorite Song"
+                matTooltip="sugar honey ice & tea by BMTH"
+                fill="#ece7e5"
+                class="musicIcon"
                 xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns:svgjs="http://svgjs.com/svgjs"
+                viewBox="0 0 60 60"
               >
-                <defs id="SvgjsDefs1012"></defs>
-                <g id="SvgjsG1013">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                      d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"
-                      class="color000 svgShape"
-                    ></path>
-                  </svg>
-                </g>
+                <path
+                  d="M59.244.435c.48.38.756.956.756 1.564v38.668c0 6.248-5.034 11.332-11.224 11.332-6.188 0-11.222-5.084-11.222-11.332 0-6.25 5.034-11.334 11.222-11.334 2.75 0 5.27 1.008 7.224 2.672v-17.49l-33.554 7.742v26.41c0 6.248-5.034 11.332-11.222 11.332C5.034 59.999 0 54.915 0 48.667c0-6.25 5.034-11.334 11.224-11.334 2.75 0 5.268 1.008 7.222 2.672v-29.34c0-.93.644-1.738 1.55-1.948L57.552.05a1.995 1.995 0 0 1 1.692.384zm-48.02 55.564c3.982 0 7.222-3.29 7.222-7.332 0-4.044-3.24-7.334-7.222-7.334C7.24 41.333 4 44.623 4 48.667c0 4.042 3.24 7.332 7.224 7.332zM22.446 18.15L56 10.409V4.513l-33.554 7.744v5.894zm26.33 29.848c3.984 0 7.224-3.29 7.224-7.332 0-4.044-3.24-7.334-7.224-7.334-3.982 0-7.222 3.29-7.222 7.334 0 4.042 3.24 7.332 7.222 7.332z"
+                />
               </svg>
             </a>
-            <a target="_blank" href="https://twitter.com/AidenNSchrock">
+            <a target="_blank" href="https://playoverwatch.com/en-us/">
               <svg
-                alt="Twitter"
-                class="socialIcons"
-                id="SvgjsSvg1016"
+                alt="My Favorite Game"
+                matTooltip="Overwatch"
+                fill="#ece7e5"
+                class="pcIcon"
                 xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns:svgjs="http://svgjs.com/svgjs"
+                data-name="Layer 1"
+                viewBox="0 0 128 128"
               >
-                <defs id="SvgjsDefs1017"></defs>
-                <g id="SvgjsG1018">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                      d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
-                      class="color000 svgShape"
-                    ></path>
-                  </svg>
-                </g>
+                <path
+                  d="M4.00061 30V70a6.00656 6.00656 0 0 0 6 6H36.00049v4h-4a2 2 0 0 0 0 4H58.00037a2 2 0 1 0 0-4h-4V76H80.00024a6.00651 6.00651 0 0 0 5.99994-6V30a6.00651 6.00651 0 0 0-5.99994-6H10.00061A6.00656 6.00656 0 0 0 4.00061 30zM50.00043 80H40.00049V76h9.99994zM82.00024 30V70a2.00229 2.00229 0 0 1-2 2H10.00061a2.00229 2.00229 0 0 1-2-2V30a2.00229 2.00229 0 0 1 2-2H80.00024A2.00229 2.00229 0 0 1 82.00024 30zM122 24H98.00012a6.00655 6.00655 0 0 0-5.99994 6V94a6.00655 6.00655 0 0 0 5.99994 6H122a6.00656 6.00656 0 0 0 6-6V30A6.00656 6.00656 0 0 0 122 24zm2 70a2.00229 2.00229 0 0 1-2 2H98.00012a2.00228 2.00228 0 0 1-1.99994-2V68H124zm0-30H96.00018V60H124zm0-8H96.00018V30a2.00228 2.00228 0 0 1 1.99994-2H122a2.00229 2.00229 0 0 1 2 2z"
+                />
+                <path
+                  d="M117.00006 36H103.00012a2 2 0 0 0 0 4h13.99994a2 2 0 1 0 0-4zM117.00006 44H103.00012a2 2 0 0 0 0 4h13.99994a2 2 0 1 0 0-4zM106.00012 88h7.99994a2.0001 2.0001 0 0 0 2-2V78a2.0001 2.0001 0 0 0-2-2h-7.99994a2.0001 2.0001 0 0 0-2 2v8A2.0001 2.0001 0 0 0 106.00012 88zm2-8h3.99994v4h-3.99994zM.5827 102.05957A4.04121 4.04121 0 0 0 4.0636 104H85.93726a4.04121 4.04121 0 0 0 3.4809-1.94043 3.9265 3.9265 0 0 0 .13965-3.87012l-4.121-8A4.04839 4.04839 0 0 0 81.81616 88H8.18469a4.04839 4.04839 0 0 0-3.62061 2.18945l-4.121 8A3.9265 3.9265 0 0 0 .5827 102.05957zM8.18469 92l73.69641.02148 4.1225 7.9541C85.99243 100 85.95239 100 85.93726 100l-81.9386.02148zM50.65717 47.17188a2.00011 2.00011 0 0 0 2.829-2.82812l-2.82855-2.8291a2.00013 2.00013 0 0 0-2.8291 2.82813zM39.34326 58.48535a2.00011 2.00011 0 0 0 2.829-2.82812l-2.82855-2.8291a2.00013 2.00013 0 0 0-2.8291 2.82813zM47.829 55.65625a1.99979 1.99979 0 0 0 2.82813-2.82812l-8.48535-8.48437a1.99976 1.99976 0 0 0-2.82806 2.82813z"
+                />
               </svg>
             </a>
           </div>
         </div>
+        <div class="pfpWrapper">
+          <img
+            alt="Headshot of Aiden Schrock"
+            class="pfp"
+            src="../../assets/pfp.png"
+          />
+        </div>
+      </section>
+      <div #work fxLayout="column" id="work" class="work">
+        <h2>Work</h2>
+        <div
+          fxLayout.lt-md="column"
+          fxLayoutAlign.lt-md="center center"
+          fxLayout="row"
+          fxLayoutGap="10%"
+          class="workContent"
+        >
+          <div [routerLink]="['/work']" fxLayout="column">
+            <img
+              alt="Recolude Website Mock"
+              class="siteMock"
+              src="../../assets/RecoludeMock.png"
+            />
+            <h4>RECOLUDE</h4>
+          </div>
+          <div fxLayout="column">
+            <a
+              target="_blank"
+              href="https://medium.com/@aidenschrock/allrecipes-ux-design-study-redesigning-the-most-popular-cooking-site-e04c73ed58a1"
+            >
+              <img
+                alt="Allrecipes Website Mock"
+                class="siteMock"
+                src="../../assets/AllrecipesMock.png"
+              />
+              <h4>Allrecipes-Product Redesign</h4>
+            </a>
+          </div>
+        </div>
       </div>
-    </section>
-  </div>
-
-  <div fxHide.lt-sm class="footer">
-    <div class="content">&#169;{{ currentYear }} Aiden Schrock</div>
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div #contact fxLayout.lt-md="column" class="contactContent">
+          <div class="contact-info">
+            <p>
+              If you’re interested in working with me, please reach out to me
+              through any of my socials!
+            </p>
+            <div class="socials">
+              <a target="_blank" href="https://github.com/aidenschrock">
+                <svg
+                  alt="Github"
+                  class="socialIcons"
+                  id="SvgjsSvg1001"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:svgjs="http://svgjs.com/svgjs"
+                >
+                  <defs id="SvgjsDefs1002"></defs>
+                  <g id="SvgjsG1008" transform="matrix(1,0,0,1,0,0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                        class="color000 svgShape"
+                      ></path>
+                    </svg>
+                  </g>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/aiden-schrock/"
+              >
+                <svg
+                  alt="linkedin"
+                  class="socialIcons"
+                  id="SvgjsSvg1011"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:svgjs="http://svgjs.com/svgjs"
+                >
+                  <defs id="SvgjsDefs1012"></defs>
+                  <g id="SvgjsG1013">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path
+                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"
+                        class="color000 svgShape"
+                      ></path>
+                    </svg>
+                  </g>
+                </svg>
+              </a>
+              <a target="_blank" href="https://twitter.com/AidenNSchrock">
+                <svg
+                  alt="Twitter"
+                  class="socialIcons"
+                  id="SvgjsSvg1016"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:svgjs="http://svgjs.com/svgjs"
+                >
+                  <defs id="SvgjsDefs1017"></defs>
+                  <g id="SvgjsG1018">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path
+                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
+                        class="color000 svgShape"
+                      ></path>
+                    </svg>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </div>
 <div class="mobileNavbarWrapper">

@@ -38,14 +38,10 @@ a:hover {
   color: #ff7f11;
   cursor: pointer;
 }
+
 .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-  grid-template-rows: 4em auto 4em;
-  grid-template-areas:
-    "header header header"
-    ". main ."
-    ". footer .";
+  display: flex;
+  justify-content: center;
 }
 
 nav {
@@ -64,7 +60,6 @@ nav {
 }
 
 .top {
-  grid-area: header;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -95,13 +90,13 @@ nav {
   cursor: pointer;
   color: #ff7f11;
 }
-
-.main {
+.mainWrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  grid-area: main;
+  flex: 1 0 auto;
+}
+.main {
+  max-width: 1440px;
 }
 
 .header {
@@ -316,19 +311,6 @@ form {
 
 .socialIcons:hover {
   fill: #ff7f11;
-}
-
-.footer {
-  display: block;
-  grid-area: footer;
-  padding: 1%;
-  margin-bottom: 0px;
-  width: 100%;
-  .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 .mobileNavbarWrapper {
