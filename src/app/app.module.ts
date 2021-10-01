@@ -16,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from './contact.service';
 import { WorkComponent } from './work/work.component';
 import { RecoludeComponent } from './work/recolude/recolude.component';
+import { LeafyGreenNotesComponent } from './projects/leafy-green-notes/leafy-green-notes.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { RecoludeComponent } from './work/recolude/recolude.component';
     AppComponent,
     HomeComponent,
     WorkComponent,
-    RecoludeComponent
+    RecoludeComponent,
+    ProjectsComponent,
+    LeafyGreenNotesComponent
   ],
   imports: [
     BrowserModule,

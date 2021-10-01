@@ -23,7 +23,9 @@
           I'm a junior software developer who is gaining experience in creating
           digital experiences. Currently, I'm fleshing out an XR analytics
           application at
-          <a target="_blank" href="https://recolude.com">Recolude</a>.
+          <a class="orangeLinks" target="_blank" href="https://recolude.com"
+            >Recolude</a
+          >.
         </h4>
         <button (click)="onClick('contact')" class="header-button">
           Let's Talk!
@@ -134,7 +136,19 @@
               src="../../assets/RecoludeMock.png"
             />
             <h4>RECOLUDE</h4>
+            <p>Web Development and Design</p>
           </div>
+        </div>
+      </div>
+      <div fxLayout="column" class="work">
+        <h2>Projects</h2>
+        <div
+          fxLayout.lt-md="column"
+          fxLayoutAlign.lt-md="center center"
+          fxLayout="row"
+          fxLayoutGap="10%"
+          class="workContent"
+        >
           <div fxLayout="column">
             <a
               target="_blank"
@@ -146,9 +160,28 @@
                 src="../../assets/AllrecipesMock.png"
               />
               <h4>Allrecipes-Product Redesign</h4>
+              <p>Product/UX Design</p>
             </a>
           </div>
+          <div [routerLink]="['/projects']" fxLayout="column">
+            <img
+              alt="Leafy Green Notes Website Mock"
+              class="siteMock"
+              src="../../assets/LeafyGreenNotesMock.png"
+            />
+            <h4>Leafy Green Notes</h4>
+            <p>React App Using MongoDB Realm</p>
+          </div>
         </div>
+        <p>
+          See More on
+          <a
+            class="orangeLinks"
+            target="_blank"
+            href="https://https://github.com/aidenschrock"
+            >GitHub</a
+          >
+        </p>
       </div>
       <section id="contact" class="contact">
         <h2>Contact</h2>

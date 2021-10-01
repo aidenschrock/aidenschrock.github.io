@@ -1,0 +1,13 @@
+<div class="top">
+  <div id="top" class="topContent">
+    <p [routerLink]="['/home']" class="name">AS</p>
+    <nav>
+      <a (click)="backClicked()"> Home </a>
+    </nav>
+  </div>
+</div>
+<div class="wrapper">
+  <div fxLayout="column" class="main">
+    <app-leafy-green-notes></app-leafy-green-notes>
+  </div>
+</div>

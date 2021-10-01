@@ -35,7 +35,7 @@ nav {
   }
   a:hover {
     cursor: pointer;
-    color: #ff7f11;
+    color: $orange;
   }
 }
 
@@ -67,7 +67,7 @@ nav {
 }
 
 .name:hover {
-  color: #ff7f11;
+  color: $orange;
   cursor: pointer;
 }
 
@@ -81,23 +81,4 @@ nav {
   justify-content: center;
   align-items: center;
   max-width: 1440px;
-}
-
-.footer {
-  display: block;
-  padding: 1%;
-  margin-bottom: 0px;
-  width: 100%;
-  .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: $md) {
-  .main {
-    border: none;
-  }
 }

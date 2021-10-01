@@ -1,0 +1,84 @@
+@import "../../styles.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+}
+
+p {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 1.3em;
+}
+
+nav {
+  display: flex;
+  float: right;
+  margin-left: auto;
+  margin-right: 5%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+
+  a {
+    margin-right: 5%;
+  }
+  a:hover {
+    cursor: pointer;
+    color: $orange;
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.topContent {
+  align-items: center;
+  width: 84%;
+  display: flex;
+  background-color: transparent;
+}
+
+.topScrolled {
+  background-color: rgb(22, 22, 24);
+  opacity: 20%;
+}
+
+.topScrolled:hover {
+  opacity: 80%;
+}
+
+.name {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  margin-left: 2%;
+}
+
+.name:hover {
+  color: $orange;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+}

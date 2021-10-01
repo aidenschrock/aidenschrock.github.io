@@ -35,7 +35,7 @@ p {
 }
 
 a:hover {
-  color: #ff7f11;
+  color: $orange;
   cursor: pointer;
 }
 
@@ -88,7 +88,7 @@ nav {
 
 .name:hover {
   cursor: pointer;
-  color: #ff7f11;
+  color: $orange;
 }
 .mainWrapper {
   display: flex;
@@ -104,15 +104,12 @@ nav {
   justify-content: left;
   margin-bottom: 5%;
   margin-top: 5%;
-  a {
-    color: #ff7f11;
-  }
 }
 
 .header-button {
   width: 10em;
   background-color: transparent;
-  color: #ff7f11;
+  color: $orange;
   border-radius: 5px;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 3em;
@@ -129,7 +126,7 @@ nav {
 .header-button:before {
   content: "";
   position: absolute;
-  border: #ff7f11 solid 4px;
+  border: $orange solid 4px;
   border-radius: 5px;
   top: 0;
   right: 0;
@@ -192,29 +189,35 @@ nav {
 
 .coffeeIcon {
   width: 4em;
+  transition: transform 0.2s;
 }
 
 .musicIcon {
   width: 3.5em;
+  transition: transform 0.2s;
 }
 
 .pcIcon {
   height: 4.5em;
+  transition: transform 0.2s;
 }
 
 .pcIcon:hover {
-  fill: #ff7f11;
+  fill: $orange;
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .coffeeIcon:hover {
-  fill: #ff7f11;
+  fill: $orange;
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .musicIcon:hover {
-  fill: #ff7f11;
+  fill: $orange;
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .work {
@@ -240,10 +243,19 @@ nav {
 
 .siteMock {
   width: 30em;
+  transition: transform 0.2s;
 }
 
 .siteMock:hover {
   cursor: pointer;
+  transform: scale(1.1);
+}
+
+.orangeLinks {
+  color: $orange;
+}
+.orangeLinks:hover {
+  color: $orange-hover;
 }
 
 form {
@@ -306,10 +318,12 @@ form {
   width: 60px;
   height: 60px;
   fill: rgb(236, 231, 229);
+  transition: transform 0.2s;
 }
 
 .socialIcons:hover {
-  fill: #ff7f11;
+  fill: $orange;
+  transform: scale(1.2);
 }
 
 .mobileNavbarWrapper {
@@ -339,13 +353,13 @@ form {
 }
 
 .navbarIcons {
-  fill: whitesmoke;
+  fill: rgb(236, 231, 229);
   width: 35px;
   height: 35px;
 }
 
 .active .navbarIcons {
-  fill: #ff7f11;
+  fill: $orange;
 }
 
 @media only screen and (max-width: $lg) {

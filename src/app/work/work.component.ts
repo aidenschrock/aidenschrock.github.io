@@ -8,10 +8,9 @@ import { Location } from '@angular/common';
   styleUrls: ['./work.component.scss']
 })
 export class WorkComponent implements OnInit {
-  currentYear: number;
+
   work: string;
   constructor(private _location: Location) {
-    this.currentYear = new Date().getFullYear();
     this.work = "Recolude"
   }
 
