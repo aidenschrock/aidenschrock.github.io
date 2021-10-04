@@ -120,16 +120,22 @@
           />
         </div>
       </section>
-      <div #work fxLayout="column" id="work" class="work">
+      <div
+        #work
+        fxLayout.lt-md="column"
+        fxLayout="column"
+        id="work"
+        class="work"
+      >
         <h2>Work</h2>
         <div
           fxLayout.lt-md="column"
-          fxLayoutAlign.lt-md="center center"
           fxLayout="row"
           fxLayoutGap="10%"
           class="workContent"
+          [routerLink]="['/work']"
         >
-          <div [routerLink]="['/work']" fxLayout="column">
+          <div fxLayout="column" fxLayoutAlign="center center">
             <img
               alt="Recolude Website Mock"
               class="siteMock"
@@ -139,18 +145,19 @@
             <p>Web Development and Design</p>
           </div>
         </div>
-      </div>
-      <div fxLayout="column" class="work">
-        <h2>Projects</h2>
-        <div
-          fxLayout.lt-md="column"
-          fxLayoutAlign.lt-md="center center"
-          fxLayout="row"
-          fxLayoutGap="10%"
-          class="workContent"
-        >
-          <div fxLayout="column">
+
+        <div fxLayoutAlign.lt-md="center center" fxLayout="column" class="work">
+          <h2>Projects</h2>
+          <div
+            fxLayoutAlign.lt-md="center center"
+            fxLayout.lt-md="column"
+            fxLayout="row"
+            fxLayoutGap="10%"
+            class="workContent"
+          >
             <a
+              fxLayout="column"
+              fxLayoutAlign="center center"
               target="_blank"
               href="https://medium.com/@aidenschrock/allrecipes-ux-design-study-redesigning-the-most-popular-cooking-site-e04c73ed58a1"
             >
@@ -162,23 +169,28 @@
               <h4>Allrecipes-Product Redesign</h4>
               <p>Product/UX Design</p>
             </a>
-          </div>
-          <div [routerLink]="['/projects']" fxLayout="column">
-            <img
-              alt="Leafy Green Notes Website Mock"
-              class="siteMock"
-              src="../../assets/LeafyGreenNotesMock.png"
-            />
-            <h4>Leafy Green Notes</h4>
-            <p>React App Using MongoDB Realm</p>
+            <div
+              [routerLink]="['/projects']"
+              fxLayout="column"
+              fxLayoutAlign="center center"
+            >
+              <img
+                alt="Leafy Green Notes Website Mock"
+                class="siteMock"
+                src="../../assets/LeafyGreenNotesMock.png"
+              />
+              <h4>Leafy Green Notes</h4>
+              <p>React App Using MongoDB Realm</p>
+            </div>
           </div>
         </div>
+
         <p>
           See More on
           <a
             class="orangeLinks"
             target="_blank"
-            href="https://https://github.com/aidenschrock"
+            href="https://github.com/aidenschrock"
             >GitHub</a
           >
         </p>
