@@ -1,14 +1,18 @@
 <div class="wrapper">
   <div fxHide.lt-md class="top">
     <div id="top" class="topContent">
-      <h4 (click)="onClick('main')" class="name">AS</h4>
-      <a
-        class="sourceCodeBadge"
-        target="_blank"
-        href="https://github.com/aidenschrock/aidenschrock.github.io"
-      >
-        <img src="http://ForTheBadge.com/images/badges/built-with-love.svg " />
-      </a>
+      <div class="topLeft" fxLayout="row">
+        <h4 (click)="onClick('main')" class="name">AS</h4>
+        <a
+          class="sourceCodeBadge"
+          target="_blank"
+          href="https://github.com/aidenschrock/aidenschrock.github.io"
+        >
+          <img
+            src="http://ForTheBadge.com/images/badges/built-with-love.svg "
+          />
+        </a>
+      </div>
 
       <nav>
         <a (click)="onClick('main')">Home </a>
