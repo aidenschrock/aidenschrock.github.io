@@ -90,6 +90,16 @@ nav {
   cursor: pointer;
   color: $orange;
 }
+
+.sourceCodeBadge {
+margin-left: 1%;
+transition: transform 0.2s;
+}
+
+.sourceCodeBadge:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .mainWrapper {
   display: flex;
   justify-content: center;
@@ -285,6 +295,7 @@ form {
 
 .contactContent {
   margin: 5%;
+  padding-bottom: 5%;
 }
 
 .contact-info {
