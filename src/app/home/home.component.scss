@@ -27,6 +27,7 @@ h4 {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 1.5em;
   font-style: normal;
+  width: 70%;
 }
 
 p {
@@ -103,6 +104,7 @@ transition: transform 0.2s;
 .mainWrapper {
   display: flex;
   justify-content: center;
+  margin: 20px;
 }
 .main {
   max-width: 1440px;
@@ -241,6 +243,7 @@ transition: transform 0.2s;
 }
 
 .workContent {
+  justify-content: center;
   margin: 5%;
   h4:hover {
     cursor: pointer;
@@ -375,7 +378,7 @@ form {
 
 @media only screen and (max-width: $lg) {
   .aboutContent {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .contact-info {
     p {
@@ -394,16 +397,18 @@ form {
 
 @media only screen and (max-width: $md) {
   h1 {
-    font-size: 5em;
+    margin-top: unset;
+    font-size: 4.5em;
+  }
+
+  h2 {
+    font-size: 2.5em;
   }
 
   h3 {
     font-size: 1.5sem;
   }
-  .aboutContent {
-    width: 90%;
-    text-align: center;
-  }
+
   .contact-info {
     p {
       width: 80%;
@@ -412,11 +417,27 @@ form {
 }
 
 @media only screen and (max-width: $sm) {
+  h1 {
+    font-size: 2.8em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+  h4 {
+    width: unset;
+  }
   .wrapper {
     display: flex;
     flex-direction: column;
     width: 98%;
     overflow: hidden;
+  }
+
+  .aboutContent {
+    p {
+      font-size: 1em;
+    }
   }
 
   .siteMock {
@@ -432,17 +453,12 @@ form {
   }
 }
 @media only screen and (max-width: $xs) {
-  .header {
-    h1 {
-      font-size: 3.5em;
-    }
-    h2 {
-      font-size: 2em;
-    }
-    h3 {
-      font-size: 1.5em;
-      width: 90%;
-    }
+  h3 {
+    font-size: 1.5em;
+    width: 90%;
+  }
+  .aboutContent {
+    font-size: 1.2em;
   }
   p {
     font-size: 1.2em;
@@ -454,17 +470,13 @@ form {
     width: 90%;
     margin: unset;
   }
-  .about {
-    p {
-      text-align: center;
-      width: 90%;
-    }
-  }
   .aboutIcons {
+    justify-content: center;
     width: 80%;
   }
   .aboutContent {
     margin-right: 0;
+    text-align: left;
   }
 
   .contact-info {

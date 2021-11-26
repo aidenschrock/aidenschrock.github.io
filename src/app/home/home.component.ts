@@ -1,16 +1,24 @@
-import { Component, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import {
+  Component,
+  AfterViewInit,
+  ViewChild,
+  ElementRef,
+  HostListener,
+} from '@angular/core';
 import { ViewportScroller } from '@angular/common';
-import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormGroup,
+  FormControl,
+  Validators,
+} from '@angular/forms';
 import { ContactService } from '../contact.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-
-
-
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements AfterViewInit {
   contactForm: FormGroup;
@@ -27,16 +35,18 @@ export class HomeComponent implements AfterViewInit {
   @ViewChild('work') workElement!: ElementRef;
   @ViewChild('contact') contactElement!: ElementRef;
 
-
-  constructor(private viewportScroller: ViewportScroller, private builder: FormBuilder, private contact: ContactService, private _snackBar: MatSnackBar) {
+  constructor(
+    private viewportScroller: ViewportScroller,
+    private builder: FormBuilder,
+    private contact: ContactService,
+    private _snackBar: MatSnackBar
+  ) {
     this.currentYear = new Date().getFullYear();
     this.contactForm = this.builder.group({
       Fullname: new FormControl('', [Validators.required]),
       Email: new FormControl('', [Validators.required, Validators.email]),
-      Comment: new FormControl('', [Validators.required])
-    })
-
-
+      Comment: new FormControl('', [Validators.required]),
+    });
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -47,7 +57,7 @@ export class HomeComponent implements AfterViewInit {
     } else {
       element.classList.remove('topScrolled');
     }
-    this.checkOffsetTop()
+    this.checkOffsetTop();
   }
 
   public onClick(elementId: string): void {
@@ -55,20 +65,19 @@ export class HomeComponent implements AfterViewInit {
   }
 
   onSubmit(contactForm: FormGroup) {
-    console.log(contactForm)
-    this.contact.PostMessage(contactForm)
-      .subscribe(response => {
+    console.log(contactForm);
+    this.contact.PostMessage(contactForm).subscribe(
+      (response) => {
         this._snackBar.open('Message sent!', 'close');
-        console.log(response)
-      }, error => {
+        console.log(response);
+      },
+      (error) => {
         this._snackBar.open('Message failed to send.', 'close');
-        console.warn(error.responseText)
-        console.log({ error })
-      })
+        console.warn(error.responseText);
+        console.log({ error });
+      }
+    );
   }
-
-
-
 
   ngAfterViewInit() {
     this.homeOffset = this.homeElement.nativeElement.offsetTop;
@@ -77,21 +86,23 @@ export class HomeComponent implements AfterViewInit {
     this.contactOffset = this.contactElement.nativeElement.offsetTop;
   }
 
-
-
   checkOffsetTop() {
     if (window.pageYOffset >= 0 && window.pageYOffset < this.aboutOffset) {
       this.currentActive = 1;
-    } else if (window.pageYOffset >= this.aboutOffset && window.pageYOffset < this.workOffset) {
+    } else if (
+      window.pageYOffset >= this.aboutOffset &&
+      window.pageYOffset < this.workOffset
+    ) {
       this.currentActive = 2;
-    } else if (window.pageYOffset >= this.workOffset && window.pageYOffset < this.contactOffset) {
+    } else if (
+      window.pageYOffset >= this.workOffset &&
+      window.pageYOffset < this.contactOffset
+    ) {
       this.currentActive = 3;
     } else if (window.pageYOffset >= this.contactOffset) {
       this.currentActive = 4;
     } else {
       this.currentActive = 0;
     }
-
-
   }
 }
