@@ -1,23 +1,17 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Input } from '@angular/core';
 import { Location } from '@angular/common';
-
 
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
-  styleUrls: ['./work.component.scss']
+  styleUrls: ['./work.component.scss'],
 })
 export class WorkComponent implements OnInit {
+  @Input() work = 'recolude';
 
-  work: string;
-  constructor(private _location: Location) {
-    this.work = "Recolude"
-  }
+  constructor(private _location: Location) {}
 
-
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
@@ -32,9 +26,4 @@ export class WorkComponent implements OnInit {
   backClicked() {
     this._location.back();
   }
-
-  navigateWork() {
-    return "allrecipes"
-  }
 }
-

@@ -8,13 +8,18 @@ a {
 h2 {
   font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 h3 {
   font-size: 1.5em;
   font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
+}
+
+.iframe {
+  width: 95%;
+  height: 40em;
 }
 
 p {
@@ -154,6 +159,10 @@ p {
   .headerDescription {
     font-size: 1.2em;
   }
+  .iframe {
+    height: 30em;
+  }
+
   .recoludeButtons {
     width: 15em;
     height: 4em;
