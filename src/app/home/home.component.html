@@ -148,25 +148,31 @@
           fxLayout="row"
           fxLayoutGap="10%"
           class="workContent"
-          [routerLink]="['/work']"
-          [work]="recolude"
         >
-          <div fxLayout="column" fxLayoutAlign="center center">
+          <div
+            fxLayout="column"
+            fxLayoutAlign="center center "
+            [routerLink]="['/recolude']"
+          >
             <img
               alt="Recolude Website Mock"
               class="siteMock"
-              src="../../assets/RecoludeMock.png"
+              src="../../assets/recolude-mock.png"
             />
             <h4>RECOLUDE</h4>
-            <p>Web Development and Design</p>
+            <p>Software Development and Design</p>
           </div>
-          <div fxLayout="column" fxLayoutAlign="center center">
+          <div
+            fxLayout="column"
+            fxLayoutAlign="center center"
+            [routerLink]="['/ammco']"
+          >
             <img
               alt="AMMCO Logo"
               class="siteMock"
-              src="../../assets/AMMCOMock.png"
+              src="../../assets/ammco-mock.png"
             />
-            <h4>AMMCO- Siren Turtle App</h4>
+            <h4>AMMCO Siren Turtle App</h4>
             <p>Flutter Development</p>
           </div>
         </div>
@@ -189,7 +195,7 @@
               <img
                 alt="Allrecipes Website Mock"
                 class="siteMock"
-                src="../../assets/AllrecipesMock.png"
+                src="../../assets/allrecipes-mock.png"
               />
               <h4>Allrecipes-Product Redesign</h4>
               <p>Product/UX Design</p>
@@ -202,7 +208,7 @@
               <img
                 alt="Leafy Green Notes Website Mock"
                 class="siteMock"
-                src="../../assets/LeafyGreenNotesMock.png"
+                src="../../assets/leafygreennotes-mock.png"
               />
               <h4>Leafy Green Notes</h4>
               <p>React App Using MongoDB Realm</p>

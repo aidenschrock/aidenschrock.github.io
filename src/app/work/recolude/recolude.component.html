@@ -1,89 +1,117 @@
-<div id="header" class="header">
-  <img
-    alt="Recolude Full Logo"
-    src="../../assets/RecoludeBanner.png"
-    class="headerImage"
-  />
-  <h2 class="headerDescription">
-    Recolude is a a startup providing 3D spatial recording utilities for XR,
-    research, gaming, and mocap projects.
-  </h2>
-  <p>
-    <strong>Tech Stack:</strong> Angular 9, TypeScript, SCSS, Threejs, Apache
-    Echarts, Go, AWS Cognito/Amplify
-  </p>
-</div>
-<div
-  fxLayout="column"
-  fxLayoutAlign="center center"
-  class="content"
-  fxLayoutGap="5%"
->
-  <p>Check out this embeded demo!</p>
-  <div class="iframe">
-    <iframe
-      width="100%"
-      height="100%"
-      frameborder="0"
-      src="https://api.recolude.com/embed/?recording=37f0e5e2-f884-46c4-a1d8-72ae959a7fa2"
-      allowfullscreen
-    ></iframe>
+<div class="top">
+  <div id="top" class="topContent">
+    <p [routerLink]="['/home']" class="name">AS</p>
+    <nav>
+      <a (click)="backClicked()"> Home </a>
+    </nav>
   </div>
+</div>
+<div class="wrapper">
+  <div fxLayout="column" class="main">
+    <div id="header" class="header">
+      <img
+        alt="Recolude Full Logo"
+        src="../../assets/recolude-banner.png"
+        class="headerImage"
+      />
+      <h2 class="headerDescription">
+        Recolude is a a startup providing 3D spatial recording utilities for XR,
+        research, gaming, and mocap projects.
+      </h2>
+      <p>
+        <strong>Tech Stack:</strong> Angular 9, TypeScript, SCSS, Threejs,
+        Apache Echarts, Go, AWS Cognito/Amplify
+      </p>
+    </div>
+    <div
+      fxLayout="column"
+      fxLayoutAlign="center center"
+      class="content"
+      fxLayoutGap="5%"
+    >
+      <p class="tag">Check out this embeded demo!</p>
+      <div class="iframe">
+        <iframe
+          width="100%"
+          height="100%"
+          frameborder="0"
+          src="https://api.recolude.com/embed/?recording=37f0e5e2-f884-46c4-a1d8-72ae959a7fa2"
+          allowfullscreen
+        ></iframe>
+      </div>
 
-  <p>
-    When I first started doing work for Recolude, they were still in the process
-    of developing their brand's image. Their logo and website felt dull in
-    comparison to their bleeding-edge services. Keeping in mind both their
-    product and audience, I redesigned their logo to be sharper, more legible,
-    and more colorful.
-  </p>
-  <img
-    alt="Old and new Recolude logo"
-    src="../../assets/old_to_new_logo.png"
-    class="oldLogo"
-  />
+      <p>
+        When I first started doing work for Recolude, they were still in the
+        process of developing their brand's image. Their logo and website felt
+        dull in comparison to their bleeding-edge services. Keeping in mind both
+        their product and audience, I redesigned their logo to be sharper, more
+        legible, and more colorful.
+      </p>
+      <img
+        alt="Old and new Recolude logo"
+        src="../../assets/logo-rebrand.png"
+        class="oldLogo"
+      />
 
-  <p>
-    With the new logo completed, it was time to update Recolude's web app and
-    website. The team requested custom components in their app's login/signup
-    flow to replace their default AWS Amplify components. For this, I worked
-    with Angular, SASS, and AWS Cognito. I also created a custom illustration of
-    their mascot to greet users. The mascot image is a placeholder, as soon they
-    will have one of their 3D spatial recordings embedded there.
-  </p>
+      <p>
+        With the new logo completed, it was time to update Recolude's web app
+        and website. The team requested custom components in their app's
+        login/signup flow to replace their default AWS Amplify components. For
+        this, I worked with Angular, SASS, and AWS Cognito. I also created a
+        custom illustration of their mascot to greet users. The mascot image is
+        a placeholder, as soon they will have one of their 3D spatial recordings
+        embedded there.
+      </p>
 
-  <img alt="Recolude Web App" class="gif" src="../../assets/RecoludeApp.gif" />
+      <img
+        alt="Recolude Web App"
+        class="gif"
+        src="../../assets/recolude-app.gif"
+      />
 
-  <p>
-    Making large amounts of information user friendly is the biggest challenge I
-    face when developing for Recolude. Each recording can hold an unlimited
-    amount of metadata! I redesigned the webplayer's sidebar to make exploring
-    this data more intuitive.
-  </p>
-  <p>
-    Recolude has expanded its analytics features to include analytic dashboards
-    that utilize a custom API. My involvement included choosing the charting
-    library, designing the dashboard, and initiating the frontend development.
-    Below is an example image.
-  </p>
-  <a target="_blank" href="https://app.recolude.com/">
-    <button class="recoludeButtons">Recolude Web App</button>
-  </a>
-  <p>
-    For the Recolude website, I used Wix's Editor X. Their original website was
-    in WordPress, a website builder notorious for being hard to manage. Though
-    WIX has its flaws, Recolude can now easily update their site without having
-    to start from scratch or pay more than they should! My design choices were
-    based on their target demographic: Indie 3D game developers. I used strong,
-    bright colors with a dark theme and layered components to pop.
-  </p>
+      <p>
+        Making large amounts of information user friendly is the biggest
+        challenge I face when developing for Recolude. Each recording can hold
+        an unlimited amount of metadata! I redesigned the webplayer's sidebar to
+        make exploring this data more intuitive.
+      </p>
+      <img
+        alt="Webplayer Navigation"
+        class="gif"
+        src="../../assets/webplayer-nav.gif"
+      />
+      <p>
+        Recolude has expanded its analytics features to include analytic
+        dashboards that utilize a custom API. My involvement included choosing
+        the charting library, designing the dashboard, and initiating the
+        frontend development. Below is an example image.
+      </p>
+      <img
+        alt="analytics dashboard"
+        src="../../assets/analytics-dashboard.png"
+        class="oldLogo"
+      />
+      <a target="_blank" href="https://app.recolude.com/">
+        <button class="recoludeButtons">Recolude Web App</button>
+      </a>
+      <p>
+        For the Recolude website, I used Wix's Editor X. Their original website
+        was in WordPress, a website builder notorious for being hard to manage.
+        Though WIX has its flaws, Recolude can now easily update their site
+        without having to start from scratch or pay more than they should! My
+        design choices were based on their target demographic: Indie 3D game
+        developers. I used strong, bright colors with a dark theme and layered
+        components to pop.
+      </p>
 
-  <img
-    alt="Recolude Website"
-    class="gif"
-    src="../../assets/RecoludeWebsite.gif"
-  />
-  <a target="_blank" href="https://recolude.com/">
-    <button class="recoludeButtons">Recolude Website</button>
-  </a>
+      <img
+        alt="Recolude Website"
+        class="gif"
+        src="../../assets/recolude-site.gif"
+      />
+      <a target="_blank" href="https://recolude.com/">
+        <button class="recoludeButtons">Recolude Website</button>
+      </a>
+    </div>
+  </div>
 </div>
