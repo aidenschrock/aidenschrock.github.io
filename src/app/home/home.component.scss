@@ -97,8 +97,8 @@ nav {
 }
 
 .sourceCodeBadge {
-margin-left: 8%;
-transition: transform 0.2s;
+  margin-left: 8%;
+  transition: transform 0.2s;
 }
 
 .sourceCodeBadge:hover {
@@ -458,17 +458,17 @@ form {
 }
 @media only screen and (max-width: $xs) {
   h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 90%;
   }
   .aboutContent {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .header-button {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .pfp {
     width: 90%;
@@ -485,7 +485,42 @@ form {
 
   .contact-info {
     p {
+      font-size: 1.5em;
       width: 100%;
     }
+  }
+}
+@media only screen and (max-width: $xxs) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1em;
+    width: 90%;
+  }
+  h4 {
+    font-size: 1em;
+  }
+  .aboutContent {
+    font-size: 0.8em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  .header-button {
+    font-size: 1.5em;
+  }
+  .contact-info {
+    p {
+      font-size: 1.2em;
+    }
+  }
+  .socialIcons {
+    width: 40px;
+    height: 40px;
   }
 }

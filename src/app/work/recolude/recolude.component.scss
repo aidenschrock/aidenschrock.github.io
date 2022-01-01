@@ -1,5 +1,50 @@
 @import "../../../styles.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  float: right;
+  margin-left: auto;
+  margin-right: 5%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+
+  a {
+    margin-right: 5%;
+  }
+  a:hover {
+    cursor: pointer;
+    color: #d7015d;
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.topContent {
+  align-items: center;
+  width: 84%;
+  display: flex;
+  background-color: transparent;
+}
+
+.topScrolled {
+  background-color: rgb(22, 22, 24);
+  opacity: 20%;
+}
+
+.topScrolled:hover {
+  opacity: 80%;
+}
+
 a {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 1.5em;
@@ -8,7 +53,7 @@ a {
 h2 {
   font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 h3 {
@@ -17,14 +62,37 @@ h3 {
     system-ui, sans-serif;
 }
 
+.iframe {
+  width: 95%;
+  height: 40em;
+}
+
 p {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 1.3em;
 }
 
+.name {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  margin-left: 2%;
+}
+
 .name:hover {
   color: #d7015d;
   cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
 }
 
 .header {
@@ -33,7 +101,10 @@ p {
   justify-content: center;
   align-items: center;
   margin-bottom: 10%;
-  margin-top: 10%;
+  margin-top: 5%;
+  p {
+    width: 80%;
+  }
 }
 
 .headerDescription {
@@ -42,6 +113,21 @@ p {
 }
 .headerImage {
   width: 80%;
+}
+
+.tag {
+  text-align: center;
+  background: linear-gradient(
+    45deg,
+    rgb(255, 116, 146) 0%,
+    rgb(178, 119, 255) 100%
+  );
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 .content {
@@ -136,7 +222,7 @@ p {
 }
 @media only screen and (max-width: $sm) {
   p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .content {
     p {
@@ -154,6 +240,10 @@ p {
   .headerDescription {
     font-size: 1.2em;
   }
+  .iframe {
+    height: 30em;
+  }
+
   .recoludeButtons {
     width: 15em;
     height: 4em;

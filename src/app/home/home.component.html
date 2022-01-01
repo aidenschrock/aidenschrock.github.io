@@ -29,13 +29,17 @@
     <div id="main" class="main">
       <section #header class="header">
         <h1>Aiden Schrock</h1>
-        <h2>Web Developer & Designer</h2>
+        <h2>Software Developer & Designer</h2>
         <h4>
-          I'm a junior software developer who is gaining experience in creating
-          digital experiences. Currently, I'm fleshing out an XR analytics
-          application at
+          I'm a software developer who is creating a variety of digital
+          experiences. Currently, I'm fleshing out an XR analytics application
+          at
           <a class="orangeLinks" target="_blank" href="https://recolude.com"
             >Recolude</a
+          >
+          and building a turtle conservation app with
+          <a class="orangeLinks" target="_blank" href="https://www.ammco.org/"
+            >AMMCO</a
           >.
         </h4>
         <button (click)="onClick('contact')" class="header-button">
@@ -52,15 +56,15 @@
         <div #about class="aboutContent">
           <h2>About</h2>
           <p>
-            I’m Aiden, a web developer who is currently located in Austin, TX. I
-            started dabbling with code in my first years of college (i.e. a
-            mat-lab class and building a "choose your own adventure" HTML game
+            I’m Aiden, a software developer who is currently located in Austin,
+            TX. I started dabbling with code in my first years of college (i.e.
+            a mat-lab class and building a "choose your own adventure" HTML game
             for an English project). I found it fun, but didn't consider it as a
             potential career until I made friends with software engineers. I was
             quickly drawn in by the freedom and independent work lives that they
-            were living. The Odin Project kicked off my learning and then I was
-            thrown into the deep end of startup life, where I've learned most of
-            what I know.
+            were living. These professionals have mentored me throughout my
+            journey and have greatly contributed to my speedy growth as a
+            developer.
           </p>
           <br />
           <p>
@@ -144,16 +148,32 @@
           fxLayout="row"
           fxLayoutGap="10%"
           class="workContent"
-          [routerLink]="['/work']"
         >
-          <div fxLayout="column" fxLayoutAlign="center center">
+          <div
+            fxLayout="column"
+            fxLayoutAlign="center center "
+            [routerLink]="['/recolude']"
+          >
             <img
               alt="Recolude Website Mock"
               class="siteMock"
-              src="../../assets/RecoludeMock.png"
+              src="../../assets/recolude-mock.png"
             />
             <h4>RECOLUDE</h4>
-            <p>Web Development and Design</p>
+            <p>Software Development and Design</p>
+          </div>
+          <div
+            fxLayout="column"
+            fxLayoutAlign="center center"
+            [routerLink]="['/ammco']"
+          >
+            <img
+              alt="AMMCO Logo"
+              class="siteMock"
+              src="../../assets/ammco-mock.png"
+            />
+            <h4>AMMCO Siren Turtle App</h4>
+            <p>Flutter Development</p>
           </div>
         </div>
 
@@ -175,7 +195,7 @@
               <img
                 alt="Allrecipes Website Mock"
                 class="siteMock"
-                src="../../assets/AllrecipesMock.png"
+                src="../../assets/allrecipes-mock.png"
               />
               <h4>Allrecipes-Product Redesign</h4>
               <p>Product/UX Design</p>
@@ -188,7 +208,7 @@
               <img
                 alt="Leafy Green Notes Website Mock"
                 class="siteMock"
-                src="../../assets/LeafyGreenNotesMock.png"
+                src="../../assets/leafygreennotes-mock.png"
               />
               <h4>Leafy Green Notes</h4>
               <p>React App Using MongoDB Realm</p>

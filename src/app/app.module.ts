@@ -14,20 +14,20 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from './contact.service';
-import { WorkComponent } from './work/work.component';
 import { RecoludeComponent } from './work/recolude/recolude.component';
 import { LeafyGreenNotesComponent } from './projects/leafy-green-notes/leafy-green-notes.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { AmmcoComponent } from './work/ammco/ammco.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    WorkComponent,
     RecoludeComponent,
     ProjectsComponent,
-    LeafyGreenNotesComponent
+    LeafyGreenNotesComponent,
+    AmmcoComponent
   ],
   imports: [
     BrowserModule,

@@ -14,7 +14,6 @@ import {
 } from '@angular/forms';
 import { ContactService } from '../contact.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -81,7 +80,7 @@ export class HomeComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.homeOffset = this.homeElement.nativeElement.offsetTop;
-    this.aboutOffset = this.aboutElement.nativeElement.offsetTop - 5;
+    this.aboutOffset = this.aboutElement.nativeElement.offsetTop - 10;
     this.workOffset = this.workElement.nativeElement.offsetTop - 5;
     this.contactOffset = this.contactElement.nativeElement.offsetTop;
   }
