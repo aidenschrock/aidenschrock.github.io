@@ -1,6 +1,4 @@
-import { Component, OnInit, HostListener, Input } from '@angular/core';
-import { Location } from '@angular/common';
-
+import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-recolude',
   templateUrl: './recolude.component.html',
@@ -8,21 +6,8 @@ import { Location } from '@angular/common';
 })
 export class RecoludeComponent implements OnInit {
 
-  constructor(private _location: Location) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll() {
-    let element = document.querySelector('.top') as HTMLElement;
-    if (window.pageYOffset > element.clientHeight) {
-      element.classList.add('topScrolled');
-    } else {
-      element.classList.remove('topScrolled');
-    }
-  }
-
-  backClicked() {
-    this._location.back();
   }
 }

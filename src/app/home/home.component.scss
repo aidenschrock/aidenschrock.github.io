@@ -123,12 +123,12 @@ nav {
 }
 
 .header-button {
-  width: 10em;
+  width: 15em;
   background-color: transparent;
   color: $orange;
   border-radius: 5px;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  font-size: 3em;
+  font-size: 2em;
   margin-top: 5%;
   padding: 1% 4% 1% 4%;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -248,7 +248,9 @@ nav {
 
 .workContent {
   justify-content: center;
-  margin: 5%;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 1%;
   h4:hover {
     cursor: pointer;
   }
@@ -256,6 +258,16 @@ nav {
     color: white;
     text-decoration: none;
   }
+}
+
+.stacks {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.stack {
+  margin: 1%;
 }
 
 .siteMock {
@@ -380,6 +392,28 @@ form {
   fill: $orange;
 }
 
+.community {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.videos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.videoContainer {
+  width: 100%;
+  height: 300px;
+  iframe {
+    width: 90%;
+    height: 100%;
+  }
+}
+
 @media only screen and (max-width: $lg) {
   .aboutContent {
     font-size: 1em;
@@ -418,6 +452,16 @@ form {
       width: 80%;
     }
   }
+
+  .videos {
+    flex-direction: column;
+  }
+
+  .videoContainer {
+    text-align: center;
+    height: 400px;
+    margin: 2% 0;
+  }
 }
 
 @media only screen and (max-width: $sm) {
@@ -430,12 +474,17 @@ form {
   }
   h4 {
     width: unset;
+    font-size: 1.3em;
+  }
+  .header-button {
+    width: 12em;
   }
   .wrapper {
     display: flex;
     flex-direction: column;
     width: 98%;
     overflow: hidden;
+    margin: 2%;
   }
 
   .aboutContent {
@@ -446,6 +495,10 @@ form {
 
   .siteMock {
     width: 18em;
+  }
+
+  .videoContainer {
+    height: 300px;
   }
 
   .contactContent {
@@ -468,7 +521,7 @@ form {
     font-size: 1em;
   }
   .header-button {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
   .pfp {
     width: 90%;
@@ -481,6 +534,10 @@ form {
   .aboutContent {
     margin-right: 0;
     text-align: left;
+  }
+
+  .videoContainer {
+    height: 200px;
   }
 
   .contact-info {

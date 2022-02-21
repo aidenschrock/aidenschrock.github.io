@@ -1,5 +1,22 @@
 @import "../../../styles.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+}
+
 a {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 1.5em;

@@ -16,8 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from './contact.service';
 import { RecoludeComponent } from './work/recolude/recolude.component';
 import { LeafyGreenNotesComponent } from './projects/leafy-green-notes/leafy-green-notes.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { AmmcoComponent } from './work/ammco/ammco.component';
+import { ShopTillYouPopComponent } from './projects/shop-till-you-pop/shop-till-you-pop.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -25,9 +26,10 @@ import { AmmcoComponent } from './work/ammco/ammco.component';
     AppComponent,
     HomeComponent,
     RecoludeComponent,
-    ProjectsComponent,
     LeafyGreenNotesComponent,
-    AmmcoComponent
+    AmmcoComponent,
+    ShopTillYouPopComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

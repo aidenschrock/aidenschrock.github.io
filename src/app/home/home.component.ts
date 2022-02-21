@@ -28,10 +28,12 @@ export class HomeComponent implements AfterViewInit {
   public aboutOffset: number = 0;
   public workOffset: number = 0;
   public contactOffset: number = 0;
+  public communityOffset: number = 0;
 
   @ViewChild('header') homeElement!: ElementRef;
   @ViewChild('about') aboutElement!: ElementRef;
   @ViewChild('work') workElement!: ElementRef;
+  @ViewChild('community') communityElement!: ElementRef;
   @ViewChild('contact') contactElement!: ElementRef;
 
   constructor(
@@ -80,9 +82,11 @@ export class HomeComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.homeOffset = this.homeElement.nativeElement.offsetTop;
-    this.aboutOffset = this.aboutElement.nativeElement.offsetTop - 10;
-    this.workOffset = this.workElement.nativeElement.offsetTop - 5;
-    this.contactOffset = this.contactElement.nativeElement.offsetTop;
+    this.aboutOffset = this.aboutElement.nativeElement.offsetTop - 15;
+    this.workOffset = this.workElement.nativeElement.offsetTop;
+    this.communityOffset = this.communityElement.nativeElement.offsetTop + 700;
+    console.log(this.communityOffset)
+    this.contactOffset = this.contactElement.nativeElement.offsetTop + 570;
   }
 
   checkOffsetTop() {
@@ -95,12 +99,15 @@ export class HomeComponent implements AfterViewInit {
       this.currentActive = 2;
     } else if (
       window.pageYOffset >= this.workOffset &&
-      window.pageYOffset < this.contactOffset
+      window.pageYOffset < this.communityOffset
     ) {
       this.currentActive = 3;
-    } else if (window.pageYOffset >= this.contactOffset) {
+    } else if (window.pageYOffset >= this.communityOffset && window.pageYOffset < this.contactOffset) {
       this.currentActive = 4;
-    } else {
+    } else if (window.pageYOffset >= this.contactOffset) {
+      this.currentActive = 5;
+    }
+    else {
       this.currentActive = 0;
     }
   }
